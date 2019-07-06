@@ -1,0 +1,17 @@
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready( function () {
+        $('#buyTransactions').dataTable( {
+            "pageLength": 5
+        } );
+        $('#sellTransactions').dataTable( {
+            "pageLength": 5
+        } );
+    } );
+
+    document.getElementById('nav-toggle').onclick = function(){
+        document.getElementById("nav-content").classList.toggle("nav-block");
+	}
+</script>

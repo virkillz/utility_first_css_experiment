@@ -1,0 +1,58 @@
+@tailwind base;
+
+body{
+    @apply font-montserratRegular;
+}
+
+@tailwind components;
+
+nav a.active, a.btn.active{
+    @apply bg-red-100;
+    @apply text-white;
+    @apply border-red-100;
+}
+.nav-dropdown{
+    top: 48px;
+    width: 170px;
+    padding-top: 13px;
+}
+.nav-trigger:hover .nav-dropdown{
+    display: block !important;
+}
+
+
+@tailwind utilities;
+
+@tailwind screens;
+
+@media (max-width: 767px){
+    .main-menu{
+        @apply hidden;
+        @apply bg-white;
+        @apply absolute;
+        @apply z-50;
+        @apply shadow;
+        @apply py-2;
+        top : 65px;
+        width: 100%;
+    }
+    .main-menu.nav-block{
+        @apply block;
+    }
+    nav .main-menu a,
+    nav .main-menu a:hover{
+        @apply block;
+        width: 100%;
+        @apply text-left;
+        @apply bg-transparent;
+        @apply border-0;
+    }
+    nav .main-menu a:hover,
+    nav .main-menu a.active,
+    nav .main-menu a.btn.active{
+        @apply text-red-100;
+    }
+    nav .main-menu div{
+        @apply p-0;
+    }
+}

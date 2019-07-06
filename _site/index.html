@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title> Blah :: Transaction</title>
+        <!-- fonts -->
+        <link rel="stylesheet" href="assets/fonts/montserrat-regular/styles.css">
+        <link rel="stylesheet" href="assets/fonts/montserrat-semiBold/styles.css">
+        <link rel="stylesheet" href="assets/fonts/montserrat-bold/styles.css">
+        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">        
+
+        <!--Core CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+         
+
+    </head>
+    <body class="bg-gray-30 text-gray-300">
+        
+        <!-- header -->
+        <div class="bg-white shadow fixed top-0 w-full z-10">
+            <header class="block container mx-auto relative">
+                <div class="containerx mx-autox">
+                    <nav class="sm:flex flex-row">
+                        <div class="lg:w-3/12 md:w-4/12 sm:w-4/12 flex h-10">
+                            <div class="flex items-center px-2">
+                                <a href="">
+                                    <img src="assets/images/logo.svg" alt="IDK" class="h-6">
+                                </a>
+                            </div>
+                        </div>
+        
+                        <div class="lg:w-9/12 md:w-8/12 sm:w-8/12 flex justify-end h-10">
+                            <div class="flex justify-end items-center">
+        
+                                <div class="flex main-menu" id="nav-content">
+                                    <div class="flex justify-center lg:min-w-minWidthNav md:min-w-0 sm:min-w-0 py-2 lg:mx-1 md:mx-1 sm:md-0 ml-0 text-center lg:block md:block">
+                                        <a href="/" class="text-sm tracking-wide text-gray-300 border border-white rounded-full py-1 px-4 sm:px-2 bg-white transition-all transition-ease-in transition-250 hover:bg-red-100 hover:text-white hover:border-red-100 active">Transactions</a>
+                                    </div>
+                                    <div class="flex justify-center lg:min-w-minWidthNav md:min-w-0 sm:min-w-0 py-2 lg:mx-1 md:mx-1 sm:md-0 text-center lg:block md:block">
+                                        <a href="/buy_idk.html" class="text-sm tracking-wide text-gray-300 border border-white rounded-full py-1 px-6 sm:px-2  bg-white transition-all transition-ease-in transition-250 hover:bg-red-100 hover:text-white hover:border-red-100">Buy</a>
+                                    </div>
+                                    <div class="flex justify-center lg:min-w-minWidthNav md:min-w-0 sm:min-w-0 py-2 lg:mx-1 md:mx-1 sm:md-0 text-center lg:block md:block">
+                                        <a href="/sell_idk.html" class="text-sm tracking-wide text-gray-300 border border-white rounded-full py-1 px-6 sm:px-2  bg-white transition-all transition-ease-in transition-250 hover:bg-red-100 hover:text-white hover:border-red-100">Sell</a>
+                                    </div>
+                                </div>
+        
+                                <div class="flex items-center px-2 mx-1 mr-0 relative">
+                                    <div class="nav-trigger flex">
+                                        <a href="" class="border border-gray-200 bg-gray-100 w-6 h-6 rounded-full"></a>
+                                        <div class="nav-dropdown absolute hidden right-0 z-10">
+                                            <div class="shadow-lg bg-white rounded-lg">
+                                                <div class="py-2 px-3 text-sm hover:bg-gray-30">
+                                                    <a href="/profile.html">User Profile</a>
+                                                </div>  
+                                                <div class="py-2 px-3 text-sm hover:bg-gray-30">
+                                                    <a href="/partner.html">Partner Info</a>
+                                                </div>         
+                                                <div class="py-2 px-3 text-sm hover:bg-gray-30 text-red-100">
+                                                    <a href="/login.html">Sign Out</a>
+                                                </div>              
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- mobile -->
+                                <div class="flex justify-center items-center lg:hidden md:hidden">
+                                    <button id="nav-toggle" class="border w-6 h-6 rounded border-red-100 focus:outline-none shadow-none">
+                                        <img src="assets/images/nav-toggle.svg" class="w-3 m-auto" alt="">
+                                    </button>
+                                </div>
+        
+        
+                            </div>
+                        </div>
+        
+                             
+                    </nav>
+                </div>
+        
+                
+            </header>   
+        </div>
+        <!-- /header -->      
+        <div class="mt-40">
+            <i class="fa fa-cog"></i>
+        </div>
+        
+        <!-- footer -->
+          <footer class="block fixed w-full bottom-0">
+            <div class="block bg-red-100">
+                <p class="text-xs text-white tracking-wide text-center leading-footer">© IDK Foundation 2019</p>
+            </div>
+          </footer>
+        <!-- /footer -->        
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready( function () {
+                $('#buyTransactions').dataTable( {
+                    "pageLength": 5
+                } );
+                $('#sellTransactions').dataTable( {
+                    "pageLength": 5
+                } );
+            } );
+        
+            document.getElementById('nav-toggle').onclick = function(){
+                document.getElementById("nav-content").classList.toggle("nav-block");
+        	}
+        </script>    </body>  
+</html>
