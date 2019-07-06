@@ -20,85 +20,57 @@
          
 
     </head>
-    <body class="bg-gray-30 text-gray-300">
+    <body>
         
         <!-- header -->
-        <div class="bg-white shadow fixed top-0 w-full z-10">
-            <header class="block container mx-auto relative">
-                <div class="containerx mx-autox">
-                    <nav class="sm:flex flex-row">
-                        <div class="lg:w-3/12 md:w-4/12 sm:w-4/12 flex h-10">
-                            <div class="flex items-center px-2">
-                                <a href="">
-                                    <img src="assets/images/logo.svg" alt="IDK" class="h-6">
-                                </a>
-                            </div>
-                        </div>
-        
-                        <div class="lg:w-9/12 md:w-8/12 sm:w-8/12 flex justify-end h-10">
-                            <div class="flex justify-end items-center">
-        
-                                <div class="flex main-menu" id="nav-content">
-                                    <div class="flex justify-center lg:min-w-minWidthNav md:min-w-0 sm:min-w-0 py-2 lg:mx-1 md:mx-1 sm:md-0 ml-0 text-center lg:block md:block">
-                                        <a href="/" class="text-sm tracking-wide text-gray-300 border border-white rounded-full py-1 px-4 sm:px-2 bg-white transition-all transition-ease-in transition-250 hover:bg-red-100 hover:text-white hover:border-red-100 active">Transactions</a>
-                                    </div>
-                                    <div class="flex justify-center lg:min-w-minWidthNav md:min-w-0 sm:min-w-0 py-2 lg:mx-1 md:mx-1 sm:md-0 text-center lg:block md:block">
-                                        <a href="/buy_idk.html" class="text-sm tracking-wide text-gray-300 border border-white rounded-full py-1 px-6 sm:px-2  bg-white transition-all transition-ease-in transition-250 hover:bg-red-100 hover:text-white hover:border-red-100">Buy</a>
-                                    </div>
-                                    <div class="flex justify-center lg:min-w-minWidthNav md:min-w-0 sm:min-w-0 py-2 lg:mx-1 md:mx-1 sm:md-0 text-center lg:block md:block">
-                                        <a href="/sell_idk.html" class="text-sm tracking-wide text-gray-300 border border-white rounded-full py-1 px-6 sm:px-2  bg-white transition-all transition-ease-in transition-250 hover:bg-red-100 hover:text-white hover:border-red-100">Sell</a>
-                                    </div>
-                                </div>
-        
-                                <div class="flex items-center px-2 mx-1 mr-0 relative">
-                                    <div class="nav-trigger flex">
-                                        <a href="" class="border border-gray-200 bg-gray-100 w-6 h-6 rounded-full"></a>
-                                        <div class="nav-dropdown absolute hidden right-0 z-10">
-                                            <div class="shadow-lg bg-white rounded-lg">
-                                                <div class="py-2 px-3 text-sm hover:bg-gray-30">
-                                                    <a href="/profile.html">User Profile</a>
-                                                </div>  
-                                                <div class="py-2 px-3 text-sm hover:bg-gray-30">
-                                                    <a href="/partner.html">Partner Info</a>
-                                                </div>         
-                                                <div class="py-2 px-3 text-sm hover:bg-gray-30 text-red-100">
-                                                    <a href="/login.html">Sign Out</a>
-                                                </div>              
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <!-- mobile -->
-                                <div class="flex justify-center items-center lg:hidden md:hidden">
-                                    <button id="nav-toggle" class="border w-6 h-6 rounded border-red-100 focus:outline-none shadow-none">
-                                        <img src="assets/images/nav-toggle.svg" class="w-3 m-auto" alt="">
-                                    </button>
-                                </div>
-        
-        
-                            </div>
-                        </div>
-        
-                             
-                    </nav>
-                </div>
-        
-                
-            </header>   
-        </div>
+        <nav class="font-sans bg-white text-center flex justify-between my-4 mx-auto container overflow-hidden">
+          <a href="/" class="block text-left">
+            <img src="https://stitches-cdn.hyperyolo.com/logo.png" class="h-10 sm:h-10 rounded-full" alt="logo">
+          </a>
+          <ul class="text-sm text-gray-700  flex items-center">
+            <li><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Products</a></li>
+            <li><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Pricing</a></li>
+            <li class="pr-2"><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">FAQs</a>
+            </li>
+            <li class="pl-2 border-l"><a href="#"
+                class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Log In</a></li>
+            <button class="bg-primary-std hover:bg-primary-light text-white ml-4 py-2 px-3 rounded">
+              Sign Up
+            </button>
+          </ul>
+        </nav>
         <!-- /header -->      
-        <div class="mt-40">
-            <i class="fa fa-cog"></i>
+        <div class="h-screen bg-gray-100">
+            
+        <div class="flex justify-center items-center p-40">
+            <div class="rounded-lg bg-white shadow-lg p-6">
+                <div class="">
+                    Meh...
+                </div>
+            </div>
         </div>
         
-        <!-- footer -->
-          <footer class="block fixed w-full bottom-0">
-            <div class="block bg-red-100">
-                <p class="text-xs text-white tracking-wide text-center leading-footer">© IDK Foundation 2019</p>
-            </div>
-          </footer>
-        <!-- /footer -->        
+        </div>
+        
+        <div class="bottom-0 fixed w-full">
+            <!-- footer -->
+            <footer class="font-sans bg-black text-white py-8 px-4">
+              <div class="mx-auto max-w-6xl overflow-hidden flex justify-between items-center">
+                <ul class="text-sm text-gray-700  flex items-center">
+                  <li> <a href="/" class="block mr-4 w-32">
+                      <img src="https://stitches-cdn.hyperyolo.com/logo-white.png" class="" alt="logo">
+                    </a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Product</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Company</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">FAQs</a></li>
+                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">About Us</a></li>
+                </ul>
+                <p class="inline-block py-2 px-3 text-gray-800 text-xs"> ©2019 Hyperyolo. All rights reserved.</p>
+              </div>
+            </footer>
+            <!-- /footer --></div>
+        
+        
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
         <script>
