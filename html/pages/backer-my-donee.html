@@ -1,0 +1,70 @@
+---
+layout: default
+title: Backer Timeline Private
+---
+
+{{> header}}
+
+<div class="pt-10 container mx-auto flex">
+
+    <div class="w-1/4 px-4">
+        <div class="sticky top-0 transition-all">
+
+            {{> backer-sidebar-private}}
+
+
+
+            <div class="border-b-2 my-8"></div>
+
+            {{> sidebar-kategori}}
+
+        </div>
+    </div>
+
+    <div class="w-2/4 px-4 pb-20">
+
+        <div class="py-2">
+            <a href="#">
+                <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
+                    <div
+                        class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+                        123
+                        Backer
+                    </div>
+                    <img src="/assets/images/bg/komunitas.jpeg" class="object-cover h-24 w-full"
+                        style="max-height: 200px;">
+                    <div class="flex justify-center">
+                        <img src="https://i.pravatar.cc/50" class="rounded-full -mt-6 border-4 border-white mr-2">
+                    </div>
+                    <div class="py-2 px-2">
+                        <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
+                        <div class="font-semibold text-center text-xs text-gray-600">seguci • 21 backers</div>
+                        <div class="text-sm text-center my-2">Menjalankan keberagaman kreasi bagi anak jalanan</div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+
+
+    </div>
+    <div class="w-1/4 px-4">
+
+        <div class="py-1">
+            <div class="bg-purple-200 px-4 py-2 rounded-full w-full">
+                <i class="la la-search text-white mr-2"></i></i>
+                <input type="text" class="text-gray-600 bg-purple-200 focus:outline-none">
+            </div>
+        </div>
+
+        <div class="border-b my-4"></div>
+
+        {{> featured-donee}}
+
+    </div>
+</div>
+
+<div class="bottom-0 fixed w-full">
+    {{> footer}}
+</div>
