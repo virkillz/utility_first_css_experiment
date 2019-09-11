@@ -1,7 +1,7 @@
 @tailwind base;
 
 body{
-    @apply font-montserratRegular;
+    @apply font-sans;
 }
 
 @tailwind components;

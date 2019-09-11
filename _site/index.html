@@ -1,90 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <title> Blah :: Transaction</title>
-        <!-- fonts -->
-        <link rel="stylesheet" href="assets/fonts/montserrat-regular/styles.css">
-        <link rel="stylesheet" href="assets/fonts/montserrat-semiBold/styles.css">
-        <link rel="stylesheet" href="assets/fonts/montserrat-bold/styles.css">
-        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">        
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <!--Core CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
+    <title> Blah :: Transaction</title>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">
 
-         
+    <!--Core CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    </head>
-    <body>
-        
-        <!-- header -->
-        <nav class="font-sans bg-white text-center flex justify-between my-4 mx-auto container overflow-hidden">
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #805ad5 0%, #9f7aea 100%);
+
+        }
+    </style>
+
+
+
+</head>
+
+<body class="bg-gray-100">
+    
+    <!-- header -->
+    <div class="w-full gradient">
+      <nav class="font-sans py-1 font-semibold text-md text-white gradient text-center shadow-md">
+        <div class="container mx-auto tracking-wide flex justify-between items-center">
           <a href="/" class="block text-left">
-            <img src="https://stitches-cdn.hyperyolo.com/logo.png" class="h-10 sm:h-10 rounded-full" alt="logo">
+            <img src="/assets/images/logo.png" class="h-10 sm:h-10 " alt="logo">
           </a>
-          <ul class="text-sm text-gray-700  flex items-center">
-            <li><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Products</a></li>
-            <li><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Pricing</a></li>
-            <li class="pr-2"><a href="#" class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">FAQs</a>
+          <ul class="text-sm flex items-center">
+            <li class="py-2 px-4"><a href="#"
+                class="inline-block text-md hover:text-orange-500 no-underline transition-all">Kategori</a>
             </li>
-            <li class="pl-2 border-l"><a href="#"
-                class="inline-block py-2 px-3 text-gray-900 hover:text-gray-700 no-underline">Log In</a></li>
-            <button class="bg-primary-std hover:bg-primary-light text-white ml-4 py-2 px-3 rounded">
-              Sign Up
-            </button>
+            <li class="py-2 px-4"><a href="#"
+                class="inline-block text-md hover:text-orange-500 no-underline transition-all">Blog</a>
+            </li>
+            <li class="rounded-full bg-purple-400 px-4 py-1">
+              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
+                  class="la la-home"></i></i>
+              </a>
+              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
+                  class="la la-bell"></i></i>
+              </a>
+              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
+                  class="la la-search"></i></i>
+              </a>
+            </li>
+            <li class="py-2 px-4"><a href="#" class="flex items-center">
+                <img src="https://i.pravatar.cc/50" class="rounded-full border-4 border-white">
+              </a>
+            </li>
           </ul>
-        </nav>
-        <!-- /header -->      
-        <div class="h-screen bg-gray-100">
-            
-        <div class="flex justify-center items-center p-40">
-            <div class="rounded-lg bg-white shadow-lg p-6">
-                <div class="">
-                    Meh...
+        </div>
+      </nav>
+    </div>
+    <!-- /header -->
+    <div class="pt-10 container mx-auto flex">
+    
+        <div class="w-1/4 px-4">
+            <div class="sticky top-0 transition-all">
+    
+                <a href="#">
+                    <div
+                        class="mb-2 cursor-pointer py-2 px-6 font-semibold text-lg rounded-full text-purple-700 hover:text-purple-700 hover:bg-purple-200">
+                        <i class="la la-home text-2xl font-bold mr-4"></i>
+                        <span class="font-title"> Linimasa</span>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div
+                        class="mb-2 cursor-pointer py-2 px-6 font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200">
+                        <i class="la la-leaf text-2xl font-bold mr-4"></i>
+                        <span class="font-title"> Donee </span>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div
+                        class="mb-2 cursor-pointer py-2 px-6 font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200">
+                        <i class="la la-credit-card text-2xl font-bold mr-4"></i>
+                        <span class="font-title"> Riwayat Donasi</span>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div
+                        class="mb-2 cursor-pointer py-2 px-6 font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200">
+                        <i class="la la-cog text-2xl font-bold mr-4"></i>
+                        <span class="font-title"> Pengaturan</span>
+                    </div>
+                </a>
+    
+    
+                <div class="border-b-2 my-8"></div>
+    
+                <div class="my-4 font-bold text-lg font-title text-gray-700">Kategori</div>
+                
+                <div class="pl-6">
+                    <ul class="text-gray-700">
+                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Musik</a></li>
+                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Seni</a></li>
+                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Hobi</a></li>
+                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Pendidikan</a></li>
+                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Sosial</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        
+    
+        <div class="w-2/4 px-4 pb-20">
+    
+    
+            <div class=" bg-white shadow p-4 mb-4">
+                <div class="flex items-center">
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                    <div class="">
+                        <div class="text-gray-600 font-semibold">Mr.Pokemon</div>
+                        <div class="text-gray-500 text-xs">
+                            21
+                            m</div>
+                    </div>
+                </div>
+                <div class="border-b my-2 mb-4x"></div>
+                <div class="text-gray-600 my-2 font-semibold font-title text-center text-xl px-2"> Ini judul yang bisa
+                    dibuat sangat
+                    menarik </div>
+                <div class="p-2 text-gray-600 text-justify leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </div>
+    
+                <div class="text-xs text-right mt-4 text-gray-600">1 like • 32 comments</div>
+                <div class="border-b mt-2"></div>
+                <div class="flex text-gray-600">
+                    <div class="text-center w-1/2 py-2 cursor-pointer hover:bg-gray-100"><i
+                            class="la la-thumbs-up mr-2"></i>
+                        Like</div>
+                    <div class="text-center w-1/2 py-2 cursor-pointer hover:bg-gray-100"><i class="la la-comment mr-2"></i>
+                        Comment</div>
+                </div>
+                <div class="border-b mb-2"></div>
+                <div class="flex">
+    
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                    <input placeholder="Ketik komentar kamu..."
+                        class="flex-grow border px-4 focus:outline-none bg-gray-100 rounded-full">
+                    <button
+                        class="px-6 bg-purple-600 hover:bg-purple-700 transition-all ml-2 rounded-full text-white">Kirim</button>
+    
+                </div>
+            </div>
+    
+    
+            <div class=" bg-white shadow p-4">
+                <div class="flex items-center">
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                    <div class="">
+                        <div class="text-gray-600 font-semibold">Mr.Pokemon</div>
+                        <div class="text-gray-500 text-xs">
+                            21
+                            m</div>
+                    </div>
+                </div>
+                <div class="border-b my-2 mb-4x"></div>
+                <div class="text-gray-600 my-2 font-semibold font-title text-center text-xl px-2"> Ini judul yang bisa
+                    dibuat sangat
+                    menarik </div>
+                <div class="p-2 text-gray-600 text-justify leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </div>
+    
+                <div class="text-xs text-right mt-4 text-gray-600">1 like • <a href="#" class="hover:underline">32
+                        comments</a></div>
+                <div class="border-b mt-2"></div>
+                <div class="flex text-gray-600">
+                    <div class="text-center w-1/2 py-2 cursor-pointer hover:bg-gray-100"><i
+                            class="la la-thumbs-up mr-2"></i>
+                        Like</div>
+                    <div class="text-center w-1/2 py-2 cursor-pointer hover:bg-gray-100"><i class="la la-comment mr-2"></i>
+                        Comment</div>
+                </div>
+                <div class="border-b mb-2"></div>
+    
+    
+                <div class="my-1">
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                        <div
+                            class="px-4 text-gray-600 py-2 text-sm align-middle focus:outline-none bg-gray-200 rounded-full">
+                            <span class="font-bold mr-2">Subhan</span>Nggak
+                            kok
+                        </div>
+                    </div>
+                    <div class="ml-16 text-xs text-gray-600"><a href="#">Like</a> • 6 jam lalu</div>
+                </div>
+    
+    
+                <div class="flex mt-2">
+    
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                    <input placeholder="Ketik komentar kamu..."
+                        class="flex-grow border px-4 focus:outline-none bg-gray-200 rounded-full">
+                    <button
+                        class="px-6 bg-purple-600 hover:bg-purple-700 transition-all ml-2 rounded-full text-white">Kirim</button>
+    
+                </div>
+            </div>
+    
+            <div class="py-8 text-center">
+                <button class="text-purple-500 px-4 py-2 border rounded border-purple-500">Load more</button>
+            </div>
         </div>
-        
-        <div class="bottom-0 fixed w-full">
-            <!-- footer -->
-            <footer class="font-sans bg-black text-white py-8 px-4">
-              <div class="mx-auto max-w-6xl overflow-hidden flex justify-between items-center">
-                <ul class="text-sm text-gray-700  flex items-center">
-                  <li> <a href="/" class="block mr-4 w-32">
-                      <img src="https://stitches-cdn.hyperyolo.com/logo-white.png" class="" alt="logo">
-                    </a></li>
-                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Product</a></li>
-                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">Company</a></li>
-                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">FAQs</a></li>
-                  <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-400 no-underline">About Us</a></li>
-                </ul>
-                <p class="inline-block py-2 px-3 text-gray-800 text-xs"> ©2019 Hyperyolo. All rights reserved.</p>
-              </div>
-            </footer>
-            <!-- /footer --></div>
-        
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-        <script>
-            $(document).ready( function () {
-                $('#buyTransactions').dataTable( {
-                    "pageLength": 5
-                } );
-                $('#sellTransactions').dataTable( {
-                    "pageLength": 5
-                } );
+        <div class="w-1/4 px-4">
+    
+            <div class="py-1">
+                <div class="bg-purple-200 px-4 py-2 rounded-full w-full">
+                    <i class="la la-search text-white mr-2"></i></i>
+                    <input type="text" class="text-gray-600 bg-purple-200 focus:outline-none">
+                </div>
+            </div>
+    
+            <div class="border-b my-4"></div>
+    
+            <div class="sticky-x top-0-x transition-ease-in transition-delay-1000 transition-1000">
+            
+                <div class="mt-2 px-2 font-bold text-right text-lg font-title text-gray-700">Featured Donee</div>
+            
+                <div class="py-2">
+                    <a href="#">
+                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
+                            <div
+                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+                                123
+                                Backer
+                            </div>
+                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
+                            <div class="flex justify-center">
+                                <img src="https://i.pravatar.cc/50" class="rounded-full -mt-6 border-4 border-white mr-2">
+                            </div>
+                            <div class="py-2 px-2">
+                                <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
+                                <div class="font-semibold text-center text-xs text-gray-600">seguci • 21 backers</div>
+                                <div class="text-sm text-center my-2">Menjalankan keberagaman kreasi bagi anak jalanan</div>
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            
+                <div class="py-2">
+                    <a href="#">
+                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
+                            <div
+                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+                                123
+                                Backer
+                            </div>
+                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
+                            <div class="flex justify-center">
+                                <img src="https://i.pravatar.cc/50" class="rounded-full -mt-6 border-4 border-white mr-2">
+                            </div>
+                            <div class="py-2 px-2">
+                                <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
+                                <div class="font-semibold text-center text-xs text-gray-600">seguci • 21 backers</div>
+                                <div class="text-sm text-center my-2">Menjalankan keberagaman kreasi bagi anak jalanan</div>
+                            </div>
+                        </div>
+                    </a>
+            
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-0 fixed w-full">
+        <!-- footer -->
+        <footer class="font-sans gradient text-white py-2 px-4">
+          <div class="mx-auto max-w-6xl overflow-hidden flex justify-between items-center">
+            <p class="inline-block py-2 px-3 "> ©2019 VirKill. All rights reserved.</p>
+            <ul class=" flex items-center">
+              <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">Product</a></li>
+              <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">Company</a></li>
+              <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">FAQs</a></li>
+              <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">About Us</a></li>
+            </ul>
+          </div>
+        </footer>
+        <!-- /footer --></div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#buyTransactions').dataTable( {
+                "pageLength": 5
             } );
-        
-            document.getElementById('nav-toggle').onclick = function(){
-                document.getElementById("nav-content").classList.toggle("nav-block");
-        	}
-        </script>    </body>  
+            $('#sellTransactions').dataTable( {
+                "pageLength": 5
+            } );
+        } );
+    
+        document.getElementById('nav-toggle').onclick = function(){
+            document.getElementById("nav-content").classList.toggle("nav-block");
+    	}
+    </script></body>
+
 </html>

@@ -5,16 +5,146 @@ title: Transaction
 
 {{> header}}
 
-<div class="h-screen bg-gray-100">
-    
-<div class="flex justify-center items-center p-40">
-    <div class="rounded-lg bg-white shadow-lg p-6">
-        <div class="">
-            Meh...
+<div class="pt-10 container mx-auto flex">
+
+    <div class="w-1/4 px-4">
+        <div class="sticky top-0 transition-all">
+
+            {{> backer-sidebar-private}}
+
+
+
+            <div class="border-b-2 my-8"></div>
+
+            {{> sidebar-kategori}}
+
         </div>
     </div>
-</div>
 
+    <div class="w-2/4 px-4 pb-20">
+
+
+        <div class=" bg-white shadow p-4 mb-4">
+            <div class="flex items-center">
+                <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                <div class="">
+                    <div class="text-gray-600 font-semibold">Mr.Pokemon</div>
+                    <div class="text-gray-500 text-xs">
+                        21
+                        m</div>
+                </div>
+            </div>
+            <div class="border-b my-2 mb-4x"></div>
+            <div class="text-gray-600 my-2 font-semibold font-title text-center text-xl px-2"> Ini judul yang bisa
+                dibuat sangat
+                menarik </div>
+            <div class="p-2 text-gray-600 text-justify leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </div>
+
+            <div class="text-xs text-right mt-4 text-gray-600">1 like • 32 comments</div>
+            <div class="border-b mt-2"></div>
+            <div class="flex text-gray-600">
+                <div class="text-center w-1/2 py-2 cursor-pointer hover:bg-gray-100"><i
+                        class="la la-thumbs-up mr-2"></i>
+                    Like</div>
+                <div class="text-center w-1/2 py-2 cursor-pointer hover:bg-gray-100"><i class="la la-comment mr-2"></i>
+                    Comment</div>
+            </div>
+            <div class="border-b mb-2"></div>
+            <div class="flex">
+
+                <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                <input placeholder="Ketik komentar kamu..."
+                    class="flex-grow border px-4 focus:outline-none bg-gray-100 rounded-full">
+                <button
+                    class="px-6 bg-purple-600 hover:bg-purple-700 transition-all ml-2 rounded-full text-white">Kirim</button>
+
+            </div>
+        </div>
+
+
+        <div class=" bg-white shadow p-4">
+            <div class="flex items-center">
+                <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                <div class="">
+                    <div class="text-gray-600 font-semibold">Mr.Pokemon</div>
+                    <div class="text-gray-500 text-xs">
+                        21
+                        m</div>
+                </div>
+            </div>
+            <div class="border-b my-2 mb-4x"></div>
+            <div class="text-gray-600 my-2 font-semibold font-title text-center text-xl px-2"> Ini judul yang bisa
+                dibuat sangat
+                menarik </div>
+            <div class="p-2 text-gray-600 text-justify leading-relaxed">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </div>
+
+            <div class="text-xs text-right mt-4 text-gray-600">1 like • <a href="#" class="hover:underline">32
+                    comments</a></div>
+            <div class="border-b mt-2"></div>
+            <div class="flex text-gray-600">
+                <div class="text-center w-1/2 py-2 cursor-pointer hover:bg-gray-100"><i
+                        class="la la-thumbs-up mr-2"></i>
+                    Like</div>
+                <div class="text-center w-1/2 py-2 cursor-pointer hover:bg-gray-100"><i class="la la-comment mr-2"></i>
+                    Comment</div>
+            </div>
+            <div class="border-b mb-2"></div>
+
+
+            <div class="my-1">
+                <div class="flex items-center">
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                    <div
+                        class="px-4 text-gray-600 py-2 text-sm align-middle focus:outline-none bg-gray-200 rounded-full">
+                        <span class="font-bold mr-2">Subhan</span>Nggak
+                        kok
+                    </div>
+                </div>
+                <div class="ml-16 text-xs text-gray-600"><a href="#">Like</a> • 6 jam lalu</div>
+            </div>
+
+
+            <div class="flex mt-2">
+
+                <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
+                <input placeholder="Ketik komentar kamu..."
+                    class="flex-grow border px-4 focus:outline-none bg-gray-200 rounded-full">
+                <button
+                    class="px-6 bg-purple-600 hover:bg-purple-700 transition-all ml-2 rounded-full text-white">Kirim</button>
+
+            </div>
+        </div>
+
+        <div class="py-8 text-center">
+            <button class="text-purple-500 px-4 py-2 border rounded border-purple-500">Load more</button>
+        </div>
+    </div>
+    <div class="w-1/4 px-4">
+
+        <div class="py-1">
+            <div class="bg-purple-200 px-4 py-2 rounded-full w-full">
+                <i class="la la-search text-white mr-2"></i></i>
+                <input type="text" class="text-gray-600 bg-purple-200 focus:outline-none">
+            </div>
+        </div>
+
+        <div class="border-b my-4"></div>
+
+        {{> featured-donee}}
+
+    </div>
 </div>
 
 <div class="bottom-0 fixed w-full">
