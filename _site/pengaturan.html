@@ -19,13 +19,19 @@
 
     <style>
         .gradient {
+            background: linear-gradient(90deg, #805ad5 0%, #f6ad55 100%);
+
+        }
+
+        .gradient-backer {
             background: linear-gradient(90deg, #805ad5 0%, #9f7aea 100%);
 
         }
+
         .gradient-donee {
             background: linear-gradient(90deg, #ed8936 0%, #f6ad55 100%);
 
-        }        
+        }
     </style>
 
 
@@ -36,7 +42,7 @@
     
     <!-- header -->
     <div class="w-full gradient">
-      <nav class="font-sans py-1 font-semibold text-md text-white gradient text-center shadow-md">
+      <nav class="font-sans py-1 font-semibold text-md text-white gradient-backer text-center shadow-md">
         <div class="container mx-auto tracking-wide flex justify-between items-center">
           <a href="/" class="block text-left">
             <img src="/assets/images/logo.png" class="h-10 sm:h-10 " alt="logo">
@@ -60,7 +66,7 @@
               </a>
             </li>
             <li class="py-2 px-4"><a href="#" class="flex items-center">
-                <img src="https://i.pravatar.cc/50" class="rounded-full border-4 border-white">
+                <img src="/assets/images/bg/avatar2.jpeg" class="rounded-full border-4 border-white w-16">
               </a>
             </li>
           </ul>
@@ -135,27 +141,30 @@
     
             <div class="py-2">
     
-                
-                    <div class="bg-white flex p-4 mb-8 relative shadow-md rounded-lg text-gray-600 hover:shadow-lg">
-                        <div class="w-1/3">
-                            <div class="flex justify-center">
-                                    <img src="https://i.pravatar.cc/100" class="rounded-full border-4 border-white ">
-                            </div>
-                            <div class="mt-2 text-center"><button class="px-2 py-px rounded text-purple-600 border border-purple-600">Change</button></div>
+    
+                <div class="bg-white flex p-4 mb-8 relative shadow-md rounded-lg text-gray-600 hover:shadow-lg">
+                    <div class="w-1/3">
+                        <div class="flex justify-center">
+                            <img src="https://i.pravatar.cc/100" class="rounded-full border-4 border-white ">
                         </div>
-                        <div class="w-2/3">
-                            <div class="text-center font-bold font-title pt-2 text-lg">VirKill Suprapto</div>
-                            <div class="text-center py-2">vkprap ● vprap@gmail.com </div>
-                            <div class="text-center py-4 px-4">
-                                <div class="text-xs">Bio:</div>
-                                <textarea col="4" class="focus:outline-none text-center w-full bg-gray-200 rounded-lg p-4">Just a humble and generous Backer</textarea>
-                            </div>
-                            <div class="text-center"><button class="px-6 py-2 rounded text-white bg-purple-600">Save</button></div>
-                        </div>
-                       
+                        <div class="mt-2 text-center"><button
+                                class="px-2 py-px rounded text-purple-600 border border-purple-600">Change</button></div>
                     </div>
-                   
-                         
+                    <div class="w-2/3">
+                        <div class="text-center font-bold font-title pt-2 text-lg">VirKill Suprapto</div>
+                        <div class="text-center py-2">vkprap ● vprap@gmail.com </div>
+                        <div class="text-center py-4 px-4">
+                            <div class="text-xs">Bio:</div>
+                            <textarea col="4"
+                                class="focus:outline-none text-center w-full bg-gray-200 rounded-lg p-4">Just a humble and generous Backer</textarea>
+                        </div>
+                        <div class="text-center"><button class="px-6 py-2 rounded text-white bg-purple-600">Save</button>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
     
             </div>
     
@@ -187,7 +196,8 @@
                             </div>
                             <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
                             <div class="flex justify-center">
-                                <img src="https://i.pravatar.cc/50" class="rounded-full -mt-6 border-4 border-white mr-2">
+                                <img src="/assets/images/bg/avatar.jpeg"
+                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
                             </div>
                             <div class="py-2 px-2">
                                 <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
@@ -209,7 +219,8 @@
                             </div>
                             <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
                             <div class="flex justify-center">
-                                <img src="https://i.pravatar.cc/50" class="rounded-full -mt-6 border-4 border-white mr-2">
+                                <img src="/assets/images/bg/avatar.jpeg"
+                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
                             </div>
                             <div class="py-2 px-2">
                                 <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
@@ -227,7 +238,7 @@
     
     <div class="bottom-0 fixed w-full">
         <!-- footer -->
-        <footer class="font-sans gradient text-white py-2 px-4">
+        <footer class="font-sans gradient-backer text-white py-2 px-4">
           <div class="mx-auto container overflow-hidden flex justify-between items-center">
             <p class="inline-block py-2 px-3 "> ©2019 VirKill. All rights reserved.</p>
             <ul class=" flex items-center">

@@ -19,13 +19,19 @@
 
     <style>
         .gradient {
+            background: linear-gradient(90deg, #805ad5 0%, #f6ad55 100%);
+
+        }
+
+        .gradient-backer {
             background: linear-gradient(90deg, #805ad5 0%, #9f7aea 100%);
 
         }
+
         .gradient-donee {
             background: linear-gradient(90deg, #ed8936 0%, #f6ad55 100%);
 
-        }        
+        }
     </style>
 
 
@@ -36,7 +42,7 @@
     
     <!-- header -->
     <div class="w-full gradient">
-      <nav class="font-sans py-1 font-semibold text-md text-white gradient text-center shadow-md">
+      <nav class="font-sans py-1 font-semibold text-md text-white gradient-backer text-center shadow-md">
         <div class="container mx-auto tracking-wide flex justify-between items-center">
           <a href="/" class="block text-left">
             <img src="/assets/images/logo.png" class="h-10 sm:h-10 " alt="logo">
@@ -60,7 +66,7 @@
               </a>
             </li>
             <li class="py-2 px-4"><a href="#" class="flex items-center">
-                <img src="https://i.pravatar.cc/50" class="rounded-full border-4 border-white">
+                <img src="/assets/images/bg/avatar2.jpeg" class="rounded-full border-4 border-white w-16">
               </a>
             </li>
           </ul>
@@ -73,7 +79,7 @@
         <div class="w-1/4 px-4">
             <div class="sticky top-0 transition-all">
     
-                <a href="/">
+                <a href="/backer-timeline.html">
                     <div
                         class="mb-2 cursor-pointer py-2 px-6 font-semibold text-lg rounded-full text-purple-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
                         <i class="la la-home text-2xl font-bold mr-4"></i>
@@ -89,7 +95,7 @@
                     </div>
                 </a>
                 
-                <a href="/riwayat-donasi.html">
+                <a href="/backer-riwayat-donasi.html">
                     <div
                         class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
                         <i class="la la-credit-card text-2xl font-bold mr-4"></i>
@@ -97,7 +103,7 @@
                     </div>
                 </a>
                 
-                <a href="/pengaturan.html">
+                <a href="/backer-pengaturan.html">
                     <div
                         class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
                         <i class="la la-cog text-2xl font-bold mr-4"></i>
@@ -134,93 +140,98 @@
     
             <div class="py-2">
     
-                
-                    <div class="bg-white mb-8 relative shadow-md rounded-t-lg text-gray-600 hover:shadow-lg">
-                        <div
-                            class="right-0 mt-2 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-green-500">
-                            Active supporter
-                        </div>
-                        <img src="/assets/images/bg/komunitas.jpeg" class="object-cover h-32 w-full"
-                            style="max-height: 200px;">
-                        <div class="ml-4">
-                            <img src="https://i.pravatar.cc/80" class="rounded-full -mt-12 border-4 border-white mr-2 h-20">
-                        </div>
-                        <div class="p-2 -mt-8 ml-24">
-                            <div class="font-title font-bold ">Komunitas Kreasi Bersama</div>
-                            <div class="font-semibold text-sm text-gray-600">seguci • 21 backers</div> 
-                        </div>
-                        <div class="px-4">
-                            <div class="flex text-center rounded justify-between p-2 bg-gray-200">
-                                <div class="w-1/3">
-                                    <div class="font-semibold text-sm text-gray-600">Status Backing</div>
-                                    <div class="text-center text-green-500">Aktif</div>
-                                </div>
-                                <div class="w-1/3">
-                                    <div class="font-semibold text-sm text-gray-600">Backer sejak</div>
-                                    <div class="text-center">Juli 2019</div>
-                                </div>
-                                <div class="w-1/3">
-                                    <div class="font-semibold text-sm text-gray-600">Level</div>
-                                    <div class="text-center">Supporter</div>
-                                </div>                                                
-                            </div>
-                        </div>
     
-                        <div class="flex text-center justify-center p-4">
-                            <div class="mx-2">
-                                <button class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Riwayat Donasi</button>
+                <div class="bg-white mb-8 relative shadow-md rounded-t-lg text-gray-600 hover:shadow-lg">
+                    <div
+                        class="right-0 mt-2 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-green-500">
+                        Active supporter
+                    </div>
+                    <img src="/assets/images/bg/komunitas.jpeg" class="object-cover h-32 w-full" style="max-height: 200px;">
+                    <div class="ml-4">
+                        <img src="https://i.pravatar.cc/80" class="rounded-full -mt-12 border-4 border-white mr-2 h-20">
+                    </div>
+                    <div class="p-2 -mt-8 ml-24">
+                        <div class="font-title font-bold ">Komunitas Kreasi Bersama</div>
+                        <div class="font-semibold text-sm text-gray-600">seguci • 21 backers</div>
+                    </div>
+                    <div class="px-4">
+                        <div class="flex text-center rounded justify-between p-2 bg-gray-200">
+                            <div class="w-1/3">
+                                <div class="font-semibold text-sm text-gray-600">Status Backing</div>
+                                <div class="text-center text-green-500">Aktif</div>
                             </div>
-                            <div class="mx-2">
-                                <button class="px-6 py-2 text-sm rounded-full bg-purple-600 text-white transition-all border border-purple-600">Kunjungi</button>
-                            </div>                                                
-                        </div>                    
+                            <div class="w-1/3">
+                                <div class="font-semibold text-sm text-gray-600">Backer sejak</div>
+                                <div class="text-center">Juli 2019</div>
+                            </div>
+                            <div class="w-1/3">
+                                <div class="font-semibold text-sm text-gray-600">Level</div>
+                                <div class="text-center">Supporter</div>
+                            </div>
+                        </div>
                     </div>
     
-                    <div class="bg-white mb-8 relative shadow-md rounded-t-lg text-gray-600 hover:shadow-lg">
-                        <div
-                            class="right-0 mt-2 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-gray-500">
-                            Inactive Bro
+                    <div class="flex text-center justify-center p-4">
+                        <div class="mx-2">
+                            <button
+                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Riwayat
+                                Donasi</button>
                         </div>
-                        <img src="/assets/images/bg/komunitas.jpeg" class="object-cover h-32 w-full"
-                            style="max-height: 200px;">
-                        <div class="ml-4">
-                            <img src="https://i.pravatar.cc/80" class="rounded-full -mt-12 border-4 border-white mr-2 h-20">
+                        <div class="mx-2">
+                            <button
+                                class="px-6 py-2 text-sm rounded-full bg-purple-600 text-white transition-all border border-purple-600">Kunjungi</button>
                         </div>
-                        <div class="p-2 -mt-8 ml-24">
-                            <div class="font-title font-bold ">Anda Bertanya Ateis Menjawab</div>
-                            <div class="font-semibold text-sm text-gray-600">abam • 2112 backers</div> 
-                        </div>
-                        <div class="px-4">
-                            <div class="flex text-center rounded justify-between p-2 bg-gray-200">
-                                <div class="w-1/3">
-                                    <div class="font-semibold text-sm text-gray-600">Status Backing</div>
-                                    <div class="text-center text-gray-500">Inaktif</div>
-                                </div>
-                                <div class="w-1/3">
-                                    <div class="font-semibold text-sm text-gray-600">Backer sejak</div>
-                                    <div class="text-center">Juli 2019</div>
-                                </div>
-                                <div class="w-1/3">
-                                    <div class="font-semibold text-sm text-gray-600">Level</div>
-                                    <div class="text-center">Bro</div>
-                                </div>                                                
+                    </div>
+                </div>
+    
+                <div class="bg-white mb-8 relative shadow-md rounded-t-lg text-gray-600 hover:shadow-lg">
+                    <div
+                        class="right-0 mt-2 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-gray-500">
+                        Inactive Bro
+                    </div>
+                    <img src="/assets/images/bg/komunitas.jpeg" class="object-cover h-32 w-full" style="max-height: 200px;">
+                    <div class="ml-4">
+                        <img src="https://i.pravatar.cc/80" class="rounded-full -mt-12 border-4 border-white mr-2 h-20">
+                    </div>
+                    <div class="p-2 -mt-8 ml-24">
+                        <div class="font-title font-bold ">Anda Bertanya Ateis Menjawab</div>
+                        <div class="font-semibold text-sm text-gray-600">abam • 2112 backers</div>
+                    </div>
+                    <div class="px-4">
+                        <div class="flex text-center rounded justify-between p-2 bg-gray-200">
+                            <div class="w-1/3">
+                                <div class="font-semibold text-sm text-gray-600">Status Backing</div>
+                                <div class="text-center text-gray-500">Inaktif</div>
+                            </div>
+                            <div class="w-1/3">
+                                <div class="font-semibold text-sm text-gray-600">Backer sejak</div>
+                                <div class="text-center">Juli 2019</div>
+                            </div>
+                            <div class="w-1/3">
+                                <div class="font-semibold text-sm text-gray-600">Level</div>
+                                <div class="text-center">Bro</div>
                             </div>
                         </div>
+                    </div>
     
-                        <div class="flex text-center justify-center p-4">
-                            <div class="mx-2">
-                                <button class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Riwayat Donasi</button>
-                            </div>
-                            <div class="mx-2">
-                                <button class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Kunjungi</button>
-                            </div>                        
+                    <div class="flex text-center justify-center p-4">
+                        <div class="mx-2">
+                            <button
+                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Riwayat
+                                Donasi</button>
+                        </div>
+                        <div class="mx-2">
+                            <button
+                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Kunjungi</button>
+                        </div>
     
-                            <div class="mx-2">
-                                <button class="px-6 py-2 text-sm rounded-full bg-green-600 text-white transition-all border border-green-600">Aktifkan</button>
-                            </div>                                                                        
-                        </div>                    
-                    </div>                
-                         
+                        <div class="mx-2">
+                            <button
+                                class="px-6 py-2 text-sm rounded-full bg-green-600 text-white transition-all border border-green-600">Aktifkan</button>
+                        </div>
+                    </div>
+                </div>
+    
     
             </div>
     
@@ -252,7 +263,8 @@
                             </div>
                             <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
                             <div class="flex justify-center">
-                                <img src="https://i.pravatar.cc/50" class="rounded-full -mt-6 border-4 border-white mr-2">
+                                <img src="/assets/images/bg/avatar.jpeg"
+                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
                             </div>
                             <div class="py-2 px-2">
                                 <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
@@ -274,7 +286,8 @@
                             </div>
                             <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
                             <div class="flex justify-center">
-                                <img src="https://i.pravatar.cc/50" class="rounded-full -mt-6 border-4 border-white mr-2">
+                                <img src="/assets/images/bg/avatar.jpeg"
+                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
                             </div>
                             <div class="py-2 px-2">
                                 <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
@@ -292,7 +305,7 @@
     
     <div class="bottom-0 fixed w-full">
         <!-- footer -->
-        <footer class="font-sans gradient text-white py-2 px-4">
+        <footer class="font-sans gradient-backer text-white py-2 px-4">
           <div class="mx-auto container overflow-hidden flex justify-between items-center">
             <p class="inline-block py-2 px-3 "> ©2019 VirKill. All rights reserved.</p>
             <ul class=" flex items-center">
