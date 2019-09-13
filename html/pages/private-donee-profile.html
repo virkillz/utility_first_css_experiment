@@ -12,15 +12,15 @@ title: Backer Timeline Private
     <div class="w-1/4 px-4">
         <div class="sticky top-0 transition-all">
 
-            <div class="bg-white rounded shadow p-4">
-                <img src="/assets/images/bg/avatar.jpeg" class="rounded-full mx-auto w-18 h-18">
+            <div class="bg-white rounded shadow py-8 px-4">
+                <img src="/assets/images/bg/avatar.jpeg" class="rounded-full mx-auto w-20 h-20">
 
                 <div class="py-4 text-gray-800">
-                    <div class="text-center font-bold text-lg">Belajar Bersama Bimo</div>
+                    <div class="text-center font-bold font-title">Belajar Bersama Bimo</div>
                     <div class="text-center text-sm">Kelompok belajar anak jalanan</div>
                 </div>
 
-                <div class="text-2xl text-center font-bold font-title text-orange-700">21</div>
+                <div class="text-xl text-center font-bold font-title text-orange-700">21</div>
                 <div class="text-center text-gray-800 text-sm">Backer</div>
 
 
@@ -31,17 +31,45 @@ title: Backer Timeline Private
 
             <div class="border-b-2 my-8"></div>
 
-            <div class="font-title text-gray-700 font-bold py-1 px-2">Top Backer</div>
-            <div class="bg-white p-4 rounded flex shadow">
-                <img src="/assets/images/bg/avatar.jpeg"
-                    class="hover:border-indigo-500 border-2 hover:border-2 hover:shadow-md rounded-full w-12 h-12 m-2">
-                <img src="/assets/images/bg/avatar2.jpeg"
-                    class="hover:border-indigo-500 border-2 hover:shadow-md rounded-full w-12 h-12 m-2">
-                <img src="/assets/images/bg/avatar3.jpeg"
-                    class="hover:border-indigo-500 border-2 hover:shadow-md   rounded-full w-12 h-12 m-2">
-                <img src="/assets/images/bg/avatar.jpeg"
-                    class="hover:border-indigo-500 border-2 hover:shadow-md   rounded-full w-12 h-12 m-2">
-            </div>
+            <a href="/backer-timeline.html">
+                <div
+                    class="mb-2 cursor-pointer py-2 px-6 font-semibold text-lg rounded-full text-purple-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+                    <i class="la la-home text-2xl font-bold mr-4"></i>
+                    <span class="font-title"> Dashboard</span>
+                </div>
+            </a>
+
+            <a href="/backer-my-donee.html">
+                <div
+                    class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+                    <i class="la la-leaf text-2xl font-bold mr-4"></i>
+                    <span class="font-title"> Post </span>
+                </div>
+            </a>
+
+            <a href="/backer-riwayat-donasi.html">
+                <div
+                    class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+                    <i class="la la-credit-card text-2xl font-bold mr-4"></i>
+                    <span class="font-title"> Backer</span>
+                </div>
+            </a>
+
+            <a href="/backer-riwayat-donasi.html">
+                <div
+                    class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+                    <i class="la la-credit-card text-2xl font-bold mr-4"></i>
+                    <span class="font-title"> Keuangan</span>
+                </div>
+            </a>
+
+            <a href="/backer-pengaturan.html">
+                <div
+                    class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+                    <i class="la la-cog text-2xl font-bold mr-4"></i>
+                    <span class="font-title"> Pengaturan</span>
+                </div>
+            </a>
 
         </div>
     </div>
@@ -69,7 +97,49 @@ title: Backer Timeline Private
 
         <div class="border-b-2  mb-6"></div>
 
+        <div class="bg-white px-4 py-4 mb-2 border shadow">
+            <div class="flex">
+                <div class="cursor-pointer mx-2 px-4 py-px border rounded-full bg-gray-400">
+                    <i class="la la-credit-card text-2xl font-bold mr-4"></i>Text</div>
+                <div class="cursor-pointer mx-2 px-4 py-px border rounded-full bg-gray-200"> <i
+                        class="la la-credit-card text-2xl font-bold mr-4"></i>Image</div>
+                <div class="cursor-pointer mx-2 px-4 py-px border rounded-full bg-gray-200"> <i
+                        class="la la-credit-card text-2xl font-bold mr-4"></i>Video</div>
+            </div>
+            <div class="flex py-4">
+                <img src="/assets/images/bg/avatar.jpeg" class="w-12 h-12 rounded-full" alt="">
+                <div class="w-full ml-4">
+                    <input type="text" placeholder="Judul"
+                        class="focus:outline-none rounded-lg bg-gray-100 w-full  mb-2 p-4">
+                    <textarea name="post" id="" cols="30" rows="5"
+                        class="focus:outline-none rounded-lg bg-gray-100 w-full  p-4"
+                        placeholder="Konten..."></textarea>
+                    <div class="py-2 flex">
+                        <div class="w-40">Status Publikasi</div>
+                        <select class="border h-8 w-40">
+                            <option>Draft</option>
+                            <option>Public</option>
+                        </select>
+                    </div>
+                    <div class="py-2 flex">
+                        <div class="w-40">Dapat dilihat oleh</div>
+                        <select class="border h-8 w-40">
+                            <option>Semua orang</option>
+                            <option>Tier 1</option>
+                            <option>Tier 2</option>
+                        </select>
+                    </div>
+                    <div class="pt-4">
+                        <button class="px-6 shadow py-2 rounded-full bg-orange-500 text-white">Publish</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
         <div class=" bg-white shadow p-4 mb-4">
+
             <div class="flex items-center">
                 <img src="/assets/images/bg/avatar3.jpeg" class="w-12 h-12 rounded-full border-4 border-white mr-2">
                 <div class="">
@@ -179,14 +249,7 @@ title: Backer Timeline Private
     </div>
     <div class="w-1/4 px-4">
 
-        <div class="py-1">
-            <a href="#" class=""><button
-                    class="rounded-full hover:bg-indigo-500 transition-bg hover:shadow-none transition-500 shadow tracking-wider w-full bg-orange-500 px-6 py-3 text-white">Backing</button></a>
-        </div>
 
-        <div class="border-b my-4"></div>
-
-        {{> featured-donee}}
 
     </div>
 </div>
