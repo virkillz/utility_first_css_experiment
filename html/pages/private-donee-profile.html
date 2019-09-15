@@ -12,99 +12,41 @@ title: Backer Timeline Private
     <div class="w-1/4 px-4">
         <div class="sticky top-0 transition-all">
 
-            <div class="bg-white rounded shadow py-8 px-4">
-                <img src="/assets/images/bg/avatar.jpeg" class="rounded-full mx-auto w-20 h-20">
-
-                <div class="py-4 text-gray-800">
-                    <div class="text-center font-bold font-title">Belajar Bersama Bimo</div>
-                    <div class="text-center text-sm">Kelompok belajar anak jalanan</div>
-                </div>
-
-                <div class="text-xl text-center font-bold font-title text-orange-700">21</div>
-                <div class="text-center text-gray-800 text-sm">Backer</div>
-
-
-            </div>
+            {{> backer-card}}
 
 
 
 
             <div class="border-b-2 my-8"></div>
 
-            <a href="/backer-timeline.html">
-                <div
-                    class="mb-2 cursor-pointer py-2 px-6 font-semibold text-lg rounded-full text-purple-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                    <i class="la la-home text-2xl font-bold mr-4"></i>
-                    <span class="font-title"> Dashboard</span>
-                </div>
-            </a>
-
-            <a href="/backer-my-donee.html">
-                <div
-                    class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                    <i class="la la-leaf text-2xl font-bold mr-4"></i>
-                    <span class="font-title"> Post </span>
-                </div>
-            </a>
-
-            <a href="/backer-riwayat-donasi.html">
-                <div
-                    class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                    <i class="la la-credit-card text-2xl font-bold mr-4"></i>
-                    <span class="font-title"> Backer</span>
-                </div>
-            </a>
-
-            <a href="/backer-riwayat-donasi.html">
-                <div
-                    class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                    <i class="la la-credit-card text-2xl font-bold mr-4"></i>
-                    <span class="font-title"> Keuangan</span>
-                </div>
-            </a>
-
-            <a href="/backer-pengaturan.html">
-                <div
-                    class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                    <i class="la la-cog text-2xl font-bold mr-4"></i>
-                    <span class="font-title"> Pengaturan</span>
-                </div>
-            </a>
+            {{> private-donee-side-menu}}
 
         </div>
     </div>
 
     <div class="w-2/4 px-4 pb-20">
 
-        <div class="pt-4 flex">
-            <a href="#" class="pr-4">
-                <div
-                    class="text-indigo-500 px-4 font-title font-bold text-xl hover:text-indigo-500 cursor-pointer border-b-4 border-indigo-500 pb-4">
-                    Post
-                </div>
-            </a>
-            <a href="#">
-                <div class="text-gray-700 px-4 font-title font-bold text-xl hover:text-indigo-500 cursor-pointer pb-4 ">
-                    About
-                </div>
-            </a>
-            <a href="#">
-                <div class="text-gray-700 px-4 font-title font-bold text-xl hover:text-indigo-500 cursor-pointer pb-4 ">
-                    Backer
-                </div>
-            </a>
-        </div>
+        {{> donee-profile-top-menu }}
 
         <div class="border-b-2  mb-6"></div>
 
-        <div class="bg-white px-4 py-4 mb-2 border shadow">
+        <div class="bg-white px-4 text-gray-600 py-4 mb-2 border shadow">
             <div class="flex">
-                <div class="cursor-pointer mx-2 px-4 py-px border rounded-full bg-gray-400">
-                    <i class="la la-credit-card text-2xl font-bold mr-4"></i>Text</div>
-                <div class="cursor-pointer mx-2 px-4 py-px border rounded-full bg-gray-200"> <i
-                        class="la la-credit-card text-2xl font-bold mr-4"></i>Image</div>
-                <div class="cursor-pointer mx-2 px-4 py-px border rounded-full bg-gray-200"> <i
-                        class="la la-credit-card text-2xl font-bold mr-4"></i>Video</div>
+                <div
+                    class="cursor-pointer mx-2 px-6 py-1 border-2 rounded-full hover:border-orange-500 transition-all border-orange-500 flex items-center">
+                    <i class="la la-edit text-2xl mr-2"></i>
+                    <div>Text</div>
+                </div>
+                <div
+                    class="cursor-pointer mx-2 px-6 py-1 border-2 rounded-full hover:border-orange-500 transition-all flex items-center">
+                    <i class="la la-photo text-2xl mr-2"></i>
+                    <div>Image</div>
+                </div>
+                <div
+                    class="cursor-pointer mx-2 px-6 py-1 border-2 rounded-full hover:border-orange-500 transition-all flex items-center">
+                    <i class="la la-youtube text-2xl mr-2"></i>
+                    <div>Video</div>
+                </div>
             </div>
             <div class="flex py-4">
                 <img src="/assets/images/bg/avatar.jpeg" class="w-12 h-12 rounded-full" alt="">

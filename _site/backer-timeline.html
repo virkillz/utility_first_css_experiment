@@ -32,6 +32,10 @@
             background: linear-gradient(90deg, #ed8936 0%, #f6ad55 100%);
 
         }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
     </style>
 
 
@@ -41,37 +45,37 @@
 <body class="bg-gray-100">
     
     <!-- header -->
-    <div class="w-full gradient">
-      <nav class="font-sans py-1 font-semibold text-md text-white gradient-backer text-center shadow-md">
-        <div class="container mx-auto tracking-wide flex justify-between items-center">
-          <a href="/" class="block text-left">
-            <img src="/assets/images/logo.png" class="h-10 sm:h-10 " alt="logo">
-          </a>
-          <ul class="text-sm flex items-center">
-            <li class="py-2 px-4"><a href="#"
-                class="inline-block text-md hover:text-orange-500 no-underline transition-all">Kategori</a>
-            </li>
-            <li class="py-2 px-4"><a href="#"
-                class="inline-block text-md hover:text-orange-500 no-underline transition-all">Blog</a>
-            </li>
-            <li class="rounded-full bg-purple-400 px-4 py-1">
-              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-                  class="la la-home"></i></i>
-              </a>
-              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-                  class="la la-bell"></i></i>
-              </a>
-              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-                  class="la la-search"></i></i>
-              </a>
-            </li>
-            <li class="py-2 px-4"><a href="#" class="flex items-center">
-                <img src="/assets/images/bg/avatar2.jpeg" class="rounded-full border-4 border-white w-16">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="w-full ">
+        <nav class="font-sans py-1 font-semibold text-md text-white gradient-backer text-center shadow-md">
+            <div class="container mx-auto tracking-wide flex justify-between items-center">
+                <a href="/" class="block text-left">
+                    <img src="/assets/images/logo.png" class="h-10 sm:h-10 " alt="logo">
+                </a>
+                <ul class="text-sm flex items-center">
+                    <li class="py-2 px-4"><a href="#"
+                            class="inline-block text-md hover:text-orange-500 no-underline transition-all">Kategori</a>
+                    </li>
+                    <li class="py-2 px-4"><a href="#"
+                            class="inline-block text-md hover:text-orange-500 no-underline transition-all">Blog</a>
+                    </li>
+                    <li class="rounded-full bg-purple-400 px-4 py-1">
+                        <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
+                                class="la la-home"></i></i>
+                        </a>
+                        <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
+                                class="la la-bell"></i></i>
+                        </a>
+                        <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
+                                class="la la-search"></i></i>
+                        </a>
+                    </li>
+                    <li class="py-2 px-4"><a href="#" class="flex items-center">
+                            <img src="/assets/images/bg/avatar2.jpeg" class="rounded-full border-4 border-white w-16">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
     <!-- /header -->
     <div class="pt-10 container mx-auto flex">
@@ -133,7 +137,7 @@
     
             <div class=" bg-white shadow p-4 mb-4">
                 <div class="flex items-center">
-                    <img src="/assets/images/bg/avatar3.jpeg" class="w-12 h-12 rounded-full border-4 border-white mr-2">
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
                     <div class="">
                         <div class="text-gray-600 font-semibold">Mr.Pokemon</div>
                         <div class="text-gray-500 text-xs">
@@ -165,7 +169,7 @@
                 <div class="border-b mb-2"></div>
                 <div class="flex">
     
-                    <img src="/assets/images/bg/avatar3.jpeg" class="w-12 h-12 rounded-full border-4 border-white mr-2">
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
                     <input placeholder="Ketik komentar kamu..."
                         class="flex-grow border px-4 focus:outline-none bg-gray-100 rounded-full">
                     <button
@@ -177,7 +181,7 @@
     
             <div class=" bg-white shadow p-4">
                 <div class="flex items-center">
-                    <img src="/assets/images/bg/avatar3.jpeg" class="w-12 h-12 rounded-full border-4 border-white mr-2">
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
                     <div class="">
                         <div class="text-gray-600 font-semibold">Mr.Pokemon</div>
                         <div class="text-gray-500 text-xs">
@@ -210,27 +214,26 @@
                 <div class="border-b mb-2"></div>
     
     
-                <div class="my-4">
+                <div class="my-1">
                     <div class="flex items-center">
-                        <img src="/assets/images/bg/avatar3.jpeg"
-                            class="w-10 h-10  rounded-full border-4 border-white mr-2">
+                        <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
                         <div
-                            class="px-4 text-gray-600 py-1 text-sm align-middle focus:outline-none bg-gray-200 rounded-full">
-                            <span class="font-bold mr-2 text-sm">Subhan</span>Nggak
+                            class="px-4 text-gray-600 py-2 text-sm align-middle focus:outline-none bg-gray-200 rounded-full">
+                            <span class="font-bold mr-2">Subhan</span>Nggak
                             kok
                         </div>
                     </div>
-                    <div class="ml-12 text-xs text-gray-600"><a href="#">Like</a> • 6 jam lalu</div>
+                    <div class="ml-16 text-xs text-gray-600"><a href="#">Like</a> • 6 jam lalu</div>
                 </div>
     
     
-                <div class="flex mt-4">
+                <div class="flex mt-2">
     
-                    <img src="/assets/images/bg/avatar3.jpeg" class="w-10 h-10 rounded-full border-4 border-white mr-2">
+                    <img src="https://i.pravatar.cc/30" class="rounded-full border-4 border-white mr-2">
                     <input placeholder="Ketik komentar kamu..."
-                        class="flex-grow border text-sm px-4 focus:outline-none bg-gray-200 rounded-full">
+                        class="flex-grow border px-4 focus:outline-none bg-gray-200 rounded-full">
                     <button
-                        class="px-6 hover:bg-purple-700 transition-all ml-2 rounded-full text-gray-500 hover:text-white">Kirim</button>
+                        class="px-6 bg-purple-600 hover:bg-purple-700 transition-all ml-2 rounded-full text-white">Kirim</button>
     
                 </div>
             </div>

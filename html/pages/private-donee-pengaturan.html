@@ -1,0 +1,79 @@
+---
+layout: default
+title: Backer Timeline Private
+---
+
+{{> header-backer}}
+
+<img src="/assets/images/bg/komunitas.jpeg" alt="Belajar Bersama Bimo" class="object-cover h-48 w-full">
+
+<div class="pt-10 container mx-auto flex pb-20">
+
+    <div class="w-1/4 px-4">
+        <div class="sticky top-0 transition-all">
+
+            {{> backer-card}}
+
+
+
+
+            <div class="border-b-2 my-8"></div>
+
+            {{> private-donee-side-menu}}
+
+        </div>
+    </div>
+
+    <div class="w-2/4 px-4 pb-20">
+
+        <div class="font-title font-bold text-xl text-gray-700">Pengaturan Donee</div>
+
+        <div class="border-b-2  mb-6"></div>
+
+        <div class="bg-white px-8 text-gray-600 py-4 mb-2 border shadow">
+            <div class="flex py-4">
+                <div class="w-full ml-4">
+                    <div class="py-2 flex">
+                        <div class="w-40">Category</div>
+                        <select class="border h-8 w-40">
+                            <option>Music</option>
+                            <option>Art</option>
+                        </select>
+                    </div>
+                    <div class="py-2 flex">
+                        <div class="w-40">Title</div>
+                        <select class="border h-8 w-40">
+                            <option>Musisi</option>
+                            <option>Komunitas</option>
+                            <option>Individu</option>
+                        </select>
+                    </div>
+                    <div class="py-2 flex">
+                        <div class="w-40">Tagline</div>
+                        <input type="text" class="p-2 flex-grow focus:outline-none border bg-gray-200 rounded">
+                    </div>
+                    <div class="py-2 flex">
+                        <div class="w-40">Cover Image</div>
+                        <input type="text" class="p-2 flex-grow focus:outline-none border bg-gray-200 rounded">
+                    </div>
+                    <div class="pt-4">
+                        <button class="px-8 shadow py-2 rounded-full bg-purple-500 text-white">Save</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="w-1/4 px-4">
+
+
+
+    </div>
+</div>
+
+<div class="bottom-0 fixed w-full">
+    {{> footer}}
+</div>
