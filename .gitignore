@@ -1,6 +1,7 @@
 node_modules/*
 
 composer.lock
+_site/
 
 .DS_Store
 **/.DS_Store 
