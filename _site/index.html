@@ -15,6 +15,8 @@
   -->
 	<!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> -->
 	<!--Replace with your tailwind.css once created-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/line-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">
@@ -32,6 +34,20 @@
 		.gradient {
 			background: linear-gradient(95deg, #5F81F9 0%, #FF8C8C 100%);
 
+		}
+
+		.gradient-backer {
+			background: linear-gradient(90deg, #805ad5 0%, #9f7aea 100%);
+
+		}
+
+		.gradient-donee {
+			background: linear-gradient(90deg, #ed8936 0%, #f6ad55 100%);
+
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2
 		}
 
 		.btn-glow-orange:hover {
@@ -90,7 +106,7 @@
 
 </head>
 
-<body class="tracking-normal text-white gradient polkadot">
+<body class="tracking-normal text-gray-700 gradient polkadot">
 
 
 	
@@ -168,8 +184,9 @@
 	                                                class="text-blue-500x transition-all hover:text-indigo-500 ">Public
 	                                                Donee Register</a>
 	                                </li>
-	                                <li class="border-l border-black">- <input type="checkbox" class="mr-2"><a href="#"
-	                                                class="text-blue-500x transition-all hover:text-indigo-500 ">Public
+	                                <li class="border-l border-black">- <input type="checkbox" checked class="mr-2"><a
+	                                                href="/faq.html"
+	                                                class="text-blue-500 transition-all hover:text-indigo-500 ">Public
 	                                                FAQ</a>
 	                                </li>
 	                                <li class="border-l border-black">- <input type="checkbox" class="mr-2"><a href="#"
@@ -177,14 +194,16 @@
 	                                                Search Result
 	                                        </a>
 	                                </li>
-	                                <li class="border-l border-black">- <input type="checkbox" class="mr-2"><a href="#"
-	                                                class="text-blue-500x transition-all hover:text-indigo-500 ">Public
+	                                <li class="border-l border-black">- <input type="checkbox" checked class="mr-2"><a
+	                                                href="/page404.html"
+	                                                class="text-blue-500 transition-all hover:text-indigo-500 ">Public
 	                                                404
 	                                        </a>
 	                                </li>
-	                                <li class="border-l border-black">- <input type="checkbox" class="mr-2"><a href="#"
-	                                                class="text-blue-500x transition-all hover:text-indigo-500 ">Public
-	                                                Account Created
+	                                <li class="border-l border-black">- <input type="checkbox" checked class="mr-2"><a
+	                                                href="/page403.html"
+	                                                class="text-blue-500 transition-all hover:text-indigo-500 ">Public
+	                                                403
 	                                        </a>
 	                                </li>
 	
@@ -382,6 +401,27 @@
 				t = t.parentNode;
 			}
 			return false;
+		}
+	</script>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				/* Toggle between adding and removing the "active" class,
+				to highlight the button that controls the panel */
+				this.classList.toggle("active");
+
+				/* Toggle between hiding and showing the active panel */
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
 		}
 	</script>
 
