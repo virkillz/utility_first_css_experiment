@@ -16,6 +16,8 @@
 	<!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> -->
 	<!--Replace with your tailwind.css once created-->
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/line-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"> -->
 
@@ -35,11 +37,60 @@
 		.btn-glow-orange:hover {
 			box-shadow: 0 3px 10px rgba(255, 196, 0, 0.4);
 		}
+
+		.polkadot:before {
+			background-image: url(/assets/images/bg/inner_bg_shapes.png);
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		.polkadot-footer:before {
+			background-image: url(/assets/images/bg/inner_bg_shapes.png);
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 600px;
+			z-index: 1;
+		}
+
+		.banner_shapes img {
+			position: absolute;
+			z-index: 1;
+		}
+
+		.agency_1 {
+			top: 160px;
+			left: 6%;
+		}
+
+		.agency_2 {
+			top: 170px;
+			right: 30%;
+			width: 93px;
+		}
+
+		.agency_3 {
+			top: 0px;
+			right: 12%;
+		}
+
+		.agency_6 {
+			top: 25px;
+			left: 27%;
+			width: 133px;
+		}
 	</style>
 
 </head>
 
-<body class="tracking-normal text-white gradient">
+<body class="tracking-normal text-white gradient polkadot">
 
 
 	
@@ -72,7 +123,8 @@
 	                                                class="text-blue-500 transition-all hover:text-indigo-500 ">Public
 	                                                Landing Page</a>
 	                                </li>
-	                                <li class="border-l border-black">- <input type="checkbox" checked class="mr-2"><a href="register.html"
+	                                <li class="border-l border-black">- <input type="checkbox" checked class="mr-2"><a
+	                                                href="register.html"
 	                                                class="text-blue-500 transition-all hover:text-indigo-500 ">Public
 	                                                Register Page</a>
 	                                </li>
@@ -81,7 +133,8 @@
 	                                                class="text-blue-500 transition-all hover:text-indigo-500 ">Public
 	                                                Login Page</a>
 	                                </li>
-	                                <li class="border-l border-black">- <input type="checkbox" class="mr-2"><a href="register.html"
+	                                <li class="border-l border-black">- <input type="checkbox" class="mr-2"><a
+	                                                href="register.html"
 	                                                class="text-blue-500x transition-all hover:text-indigo-500 ">Public
 	                                                Donee Register</a>
 	                                </li>
@@ -99,14 +152,9 @@
 	                                                Backer
 	                                        </a>
 	                                </li>
-	                                <li class="border-l border-black">- <input type="checkbox" class="mr-2"><a href="#"
-	                                                class="text-blue-500x transition-all hover:text-indigo-500 ">Public
-	                                                Backer team
-	                                        </a>
-	                                </li>
-	                                <li class="border-l border-black">- <input type="checkbox" class="mr-2"><a href="#"
-	                                                class="text-blue-500x transition-all hover:text-indigo-500 ">Public
-	                                                About
+	                                <li class="border-l border-black">- <input type="checkbox" checked class="mr-2"><a
+	                                                href="/public-contact-us.html"
+	                                                class="text-blue-500 transition-all hover:text-indigo-500 ">Public
 	                                                Contact us
 	                                        </a>
 	                                </li>
@@ -219,7 +267,7 @@
 	                                                Palette</a>
 	                                </li>
 	                        </ul>
-	                </div>                
+	                </div>
 	        </div>
 	</div>
 
