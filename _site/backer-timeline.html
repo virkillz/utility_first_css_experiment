@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Tailwind Starter Template - Landing Page Template: Tailwind Toolbox</title>
+	<title>Backer :: Backer Timeline Private</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
@@ -16,9 +16,9 @@
 	<!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> -->
 	<!--Replace with your tailwind.css once created-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/line-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- Define your gradient here - use online tools to find a gradient matching your branding-->
 	<style>
@@ -97,63 +97,116 @@
 
 </head>
 
-<body class="tracking-normal text-gray-700 gradient polkadot">
+<body class="text-gray-700 gradient polkadot">
 
 
 	
-	<!-- header -->
-	<div class="w-full ">
-	    <nav class="font-sans py-1 font-semibold text-md text-white gradient-backer text-center shadow-md">
-	        <div class="container mx-auto tracking-wide flex justify-between items-center">
-	            <a href="/" class="block text-left">
-	                <img src="/assets/images/logo.png" class="h-10 sm:h-10 " alt="logo">
+	<nav id="headerx" class="h-18 fixed bg-white shadow transition-all transition-ease w-full z-30 top-0 text-white">
+	
+	    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+	
+	        <div class="pl-4 flex items-center">
+	            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
+	                <img src="/assets/images/logo/backer-bg-white.png" class="h-8 " alt="">
 	            </a>
-	            <ul class="text-sm flex items-center">
-	                <li class="py-2 px-4"><a href="#"
-	                        class="inline-block text-md hover:text-orange-500 no-underline transition-all">Kategori</a>
+	        </div>
+	
+	
+	        <div class="block lg:hidden pr-4 flex items-center">
+	            <div class=" rounded-full py-1 px-4 bg-gray-200 mx-2">
+	                <div class=" rounded-full py-1 lg:px-8 bg-gray-200 mx-2">
+	                    <a href="#"
+	                        class="inline-block text-3xl text-gray-700 hover:text-orange-500 no-underline px-1 transition-all"><i
+	                            class="la la-home"></i>
+	                    </a>
+	                    <a href="#"
+	                        class="inline-block text-3xl text-gray-700 hover:text-orange-500 no-underline px-1 transition-all"><i
+	                            class="la la-bell"></i><span
+	                            class="text-xs bg-red-500 text-white p-1 -ml-3 hiddenx rounded-full">10</span>
+	                    </a>
+	                    <a href="#"
+	                        class="inline-block text-3xl text-gray-700 hover:text-orange-500 no-underline px-1 transition-all"><i
+	                            class="la la-search"></i>
+	                    </a>
+	                </div>
+	            </div>
+	            <button id="nav-toggle"
+	                class="flex items-center px-3 py-2 border rounded text-gray-800 border-gray-800 appearance-none focus:outline-none">
+	                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+	                    <title>Menu</title>
+	                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+	                </svg>
+	            </button>
+	            <img src="/assets/images/bg/avatar3.jpeg" class="hidden cursor-pointer rounded-full w-12 h-12"
+	                id="nav-toggle" alt="">
+	        </div>
+	
+	        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-black lg:bg-transparent text-black p-4 lg:p-0 z-20"
+	            id="nav-content">
+	            <ul class="list-reset lg:flex text-white lg:text-gray-700  justify-end flex-1 items-center" id="navItem">
+	                <li class="mr-3">
+	                    <a class="inline-block py-2 px-4 font-semibold" href="#">Explore Community</a>
 	                </li>
-	                <li class="py-2 px-4"><a href="#"
-	                        class="inline-block text-md hover:text-orange-500 no-underline transition-all">Blog</a>
+	                <li class="mr-3">
+	                    <a class="inline-block font-semibold py-2 px-4" href="#">Blog</a>
 	                </li>
-	                <li class="rounded-full bg-purple-400 px-4 py-1">
-	                    <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-	                            class="la la-home"></i></i>
-	                    </a>
-	                    <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-	                            class="la la-bell"></i></i>
-	                    </a>
-	                    <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-	                            class="la la-search"></i></i>
-	                    </a>
+	                <li class="mr-3 lg:hidden block">
+	                    <a class="inline-block font-semibold py-2 px-4" href="#">Logout</a>
 	                </li>
-	                <li class="py-2 px-4"><a href="#" class="flex items-center">
-	                        <img src="/assets/images/bg/avatar2.jpeg" class="rounded-full border-4 border-white w-16">
-	                    </a>
+	                <li class="hidden lg:block">
+	                    <div class=" rounded-full py-1 px-8 bg-gray-200 mx-2">
+	                        <a href="#"
+	                            class="inline-block text-3xl text-gray-700 hover:text-orange-500 no-underline px-1 transition-all"><i
+	                                class="la la-home"></i>
+	                        </a>
+	                        <a href="#"
+	                            class="inline-block text-3xl text-gray-700 hover:text-orange-500 no-underline px-1 transition-all"><i
+	                                class="la la-bell"></i><span
+	                                class="text-xs bg-red-500 text-white p-1 -ml-3 hiddenx rounded-full">10</span>
+	                        </a>
+	                        <a href="#"
+	                            class="inline-block text-3xl text-gray-700 hover:text-orange-500 no-underline px-1 transition-all"><i
+	                                class="la la-search"></i>
+	                        </a>
+	                    </div>
 	                </li>
 	            </ul>
+	
+	            <img src="/assets/images/bg/avatar3.jpeg" class="cursor-pointer rounded-full w-12 h-12 hidden lg:block"
+	                alt="">
+	
 	        </div>
-	    </nav>
-	</div>
-	<!-- /header -->
-	<div class="bg-gray-200">
+	    </div>
+	
+	</nav>
+	<div class="bg-gray-200 mt-16">
 	    <div class="pt-10 container mx-auto lg:flex">
 	
 	        <div class="lg:w-1/4 px-4">
-	            <div class="sticky top-0 transition-all">
+	            <div class="transition-all" style="top: 56px; position: sticky;">
 	
+	
+	                <div class="flex items-center lg:hidden px-6">
+	                    <img src="/assets/images/bg/avatar3.jpeg" class="cursor-pointer rounded-full w-12 h-12 mr-4" id="nav-toggle" alt="">
+	                    <div class="font-bold text-xl">Hello, <span class="font-semibold"> Komunitas Tanpa Rencana!</span>
+	                    </div>
+	                </div>
+	                
+	                <div class="border-b-2 my-8 lg:hidden"></div>
+	                
 	                <div class="flex lg:block items-center">
 	                
 	                    <a href="/backer-timeline.html">
 	                        <div
-	                            class="mb-2 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 font-semibold rounded-full text-purple-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-	                            <i class="la la-home text-4xl font-bold lg:mr-4"></i>
+	                            class="mb-2 mx-1 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 font-semibold rounded-lg text-purple-700 hover:text-purple-700 hover:bg-purple-200 bg-purple-200 transition-all transition-ease transition-500">
+	                            <i class="la la-home text-2xl font-bold lg:mr-4"></i>
 	                            <div class=" lg:text-lg md:text-md text-sm"> Linimasa</div>
 	                        </div>
 	                    </a>
 	                
 	                    <a href="/backer-my-donee.html">
 	                        <div
-	                            class="mb-2 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+	                            class="mb-2 mx-1 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-lg text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
 	                            <i class="la la-leaf text-2xl font-bold lg:mr-4"></i>
 	                            <div class=" lg:text-lg md:text-md text-sm"> Donee </div>
 	                        </div>
@@ -161,7 +214,7 @@
 	                
 	                    <a href="/backer-riwayat-donasi.html">
 	                        <div
-	                            class="mb-2 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+	                            class="mb-2 mx-1 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-lg text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
 	                            <i class="la la-credit-card text-2xl font-bold lg:mr-4"></i>
 	                            <div class=" lg:text-lg md:text-md text-sm"> Riwayat Donasi</div>
 	                        </div>
@@ -169,7 +222,7 @@
 	                
 	                    <a href="/backer-pengaturan.html">
 	                        <div
-	                            class="mb-2 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+	                            class="mb-2 mx-1 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-lg text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
 	                            <i class="la la-cog text-2xl font-bold lg:mr-4"></i>
 	                            <div class=" lg:text-lg md:text-md text-sm"> Pengaturan</div>
 	                        </div>
@@ -324,19 +377,19 @@
 	            </div>
 	            <div class="border-b my-4"></div>
 	
-	            <div class="sticky-x top-0-x transition-ease-in transition-delay-1000 transition-1000">
+	            <div class="pb-20">
 	            
-	                <div class="mt-2 px-2 font-bold text-right text-lg  text-gray-700">Featured Donee</div>
+	                <div class="mt-2 px-2 font-bold text-right text-lg  text-gray-700">Recommended Community</div>
 	            
 	                <div class="py-2">
 	                    <a href="#">
 	                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
 	                            <div
-	                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+	                                class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-500">
 	                                123
 	                                Backer
 	                            </div>
-	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
+	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-32 w-full object-cover">
 	                            <div class="flex justify-center">
 	                                <img src="/assets/images/bg/avatar.jpeg"
 	                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
@@ -355,11 +408,11 @@
 	                    <a href="#">
 	                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
 	                            <div
-	                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+	                                class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-500">
 	                                123
 	                                Backer
 	                            </div>
-	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
+	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-32 w-full object-cover">
 	                            <div class="flex justify-center">
 	                                <img src="/assets/images/bg/avatar.jpeg"
 	                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
@@ -384,7 +437,7 @@
 	
 	<div class="bottom-0 fixed w-full">
 	    <!-- footer -->
-	    <footer class="font-sans gradient-backer text-white py-2 px-4">
+	    <footer class="font-sans bg-white shadow-lg border-gray-300 border-t-2 text-gray-700 py-2 px-4">
 	      <div class="mx-auto container overflow-hidden flex justify-between items-center">
 	        <p class="inline-block py-2 px-3 "> ©2019 VirKill. All rights reserved.</p>
 	        <ul class=" flex items-center">
@@ -414,6 +467,7 @@
 		var header = document.getElementById("header");
 		var navcontent = document.getElementById("nav-content");
 		var navaction = document.getElementById("navAction");
+		var navtoggle = document.getElementById("nav-toggle");
 		var navitem = document.getElementById("navItem");
 		var brandname = document.getElementById("brand");
 		var toToggle = document.querySelectorAll(".toggleColour");
@@ -425,26 +479,30 @@
 
 			if (scrollpos > 10) {
 				brandname.src = "/assets/images/logo/backer-bg-white.png";
-				header.classList.add("bg-white");
-				header.classList.remove("gradient");
 				navaction.classList.remove("bg-white");
 				navitem.classList.remove("text-white");
 				navitem.classList.add("text-gray-700");
 				navaction.classList.add("gradient");
-
+				navtoggle.classList.remove("text-white");
+				navtoggle.classList.remove("border-white");
+				navtoggle.classList.add("text-gray-800");
+				navtoggle.classList.add("border-gray-800");
 				//Use to switch toggleColour colours
 				for (var i = 0; i < toToggle.length; i++) {
 					toToggle[i].classList.add("text-gray-800");
 					toToggle[i].classList.remove("text-white");
 				}
 				header.classList.add("shadow");
-				navcontent.classList.remove("bg-gray-100");
+				header.classList.add("bg-white");
+				header.classList.remove("bg-transparent");
+				navcontent.classList.remove("bg-black");
 				navcontent.classList.add("bg-white");
 			}
 			else {
 				brandname.src = "/assets/images/logo/backer-bg-indigo.png";
 				header.classList.remove("bg-white");
 				header.classList.add("bg-tranparant");
+				header.classList.add("shadow");
 				navaction.classList.remove("gradient");
 				navaction.classList.add("bg-white");
 				navitem.classList.remove("text-gray-700");
@@ -459,7 +517,11 @@
 
 				header.classList.remove("shadow");
 				navcontent.classList.remove("bg-white");
-				navcontent.classList.add("bg-gray-100");
+				navcontent.classList.add("bg-black");
+				navtoggle.classList.add("text-white");
+				navtoggle.classList.add("border-white");
+				navtoggle.classList.remove("text-gray-800");
+				navtoggle.classList.remove("border-gray-800");
 
 			}
 

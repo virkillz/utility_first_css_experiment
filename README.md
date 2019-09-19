@@ -2,10 +2,17 @@
 
 ## TODO BIG
 
-- [ ] Header for logged in Donee/Backer
+- [x] Header for logged in Donee/Backer
 - [ ] Onboarding flow for Donee
-- [ ] Some page not yet responsive
-- [ ] Featured donee's banner needs to be smaller 
+- [x] Some page not yet responsive
+- [x] Featured donee's banner needs to be smaller
+- [ ] Accept term and condition for sign up
+- [ ] link to login at sign up
+- [ ] link to forget password at sign-in
+- [ ] Switch Language at header
+- [x] Fix Header font
+- [ ] Fix Footer
+- [x] Create Header Variant 
 
 ## PHASE 1 Feature
 

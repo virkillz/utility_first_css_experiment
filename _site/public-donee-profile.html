@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Tailwind Starter Template - Landing Page Template: Tailwind Toolbox</title>
+	<title>Backer :: Backer Timeline Private</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
@@ -16,9 +16,9 @@
 	<!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> -->
 	<!--Replace with your tailwind.css once created-->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/line-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- Define your gradient here - use online tools to find a gradient matching your branding-->
 	<style>
@@ -97,7 +97,7 @@
 
 </head>
 
-<body class="tracking-normal text-gray-700 gradient polkadot">
+<body class="text-gray-700 gradient polkadot">
 
 
 	
@@ -113,7 +113,7 @@
 	
 	        <div class="block lg:hidden pr-4">
 	            <button id="nav-toggle"
-	                class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
+	                class="flex items-center px-3 py-2 border rounded text-white border-white appearance-none focus:outline-none">
 	                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 	                    <title>Menu</title>
 	                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
@@ -125,24 +125,22 @@
 	            id="nav-content">
 	            <ul class="list-reset lg:flex text-white  justify-end flex-1 items-center" id="navItem">
 	                <li class="mr-3">
-	                    <a class="inline-block py-2 px-4  font-bold text-orange-500 no-underline"
-	                        href="#">Home</a>
+	                    <a class="inline-block py-2 px-4 font-bold" href="#">Home</a>
 	                </li>
 	                <li class="mr-3">
-	                    <a class="inline-block no-underline hover:text-orange-500 hover:text-underline py-2 px-4"
-	                        href="#">Explore</a>
+	                    <a class="inline-block font-semibold py-2 px-4" href="#">Explore</a>
 	                </li>
 	                <li class="mr-3">
-	                    <a class="inline-block no-underline hover:text-orange-500 hover:text-underline py-2 px-4"
-	                        href="#">Start Donee page</a>
+	                    <a class="inline-block transition-all font-semibold py-2 px-4" href="#">Start Donee
+	                        page</a>
 	                </li>
 	            </ul>
 	            <a href="/register.html"> <button id="navAction"
-	                    class="mr-2 hover:underline bg-orange-500 text-white font-semibold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow">Sign
+	                    class="mr-2 hover:bg-orange-600 transition-ease transition-all bg-orange-500 text-white font-semibold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow">Sign
 	                    Up</button></a>
 	
 	            <a href="/login.html"> <button
-	                    class="hover:underline bg-white text-gray-800 font-semibold text-indigo-500 rounded-full mt-4 lg:mt-0 py-2 px-8 ">Login</button></a>
+	                    class="bg-white border-orange-500 hover:text-white transition-ease transition-all hover:bg-orange-500 font-semibold text-orange-500 rounded-full mt-4 lg:mt-0 py-2 px-8 ">Login</button></a>
 	
 	        </div>
 	    </div>
@@ -156,7 +154,7 @@
 	        <div class="lg:w-1/4 px-4 ">
 	            <div class="transition-all" style="top: 56px; position: sticky;">
 	
-	                <div class="bg-white rounded shadow py-6 px-4">
+	                <div class="pt-10 bg-white rounded shadow py-6 px-4">
 	                    <img src="/assets/images/bg/avatar.jpeg" class="rounded-full mx-auto w-20 h-20">
 	                
 	                    <div class="py-4 text-gray-800">
@@ -166,12 +164,12 @@
 	                
 	                    <div class="flex pt-4">
 	                        <div class="w-1/2">
-	                            <div class="text-xl text-center font-bold  text-orange-500">21</div>
+	                            <div class="text-xl text-center font-bold  text-indigo-600">21</div>
 	                            <div class="text-center text-gray-600 text-sm">Backer</div>
 	                        </div>
 	                
 	                        <div class="w-1/2">
-	                            <div class="text-xl text-center font-bold  text-orange-500">321</div>
+	                            <div class="text-xl text-center font-bold  text-indigo-600">321</div>
 	                            <div class="text-center text-gray-600 text-sm">Posts</div>
 	                        </div>
 	                    </div>
@@ -206,19 +204,19 @@
 	            <div class="pt-4 flex">
 	                <a href="#">
 	                    <div
-	                        class="text-indigo-500 px-4  transition-all font-bold text-xl hover:text-indigo-500 cursor-pointer border-b-4 hover:border-indigo-500 border-indigo-500 pb-4">
+	                        class="text-indigo-500 px-4  transition-all font-bold lg:text-xl md:text-lg hover:text-indigo-500 cursor-pointer border-b-4 hover:border-indigo-500 border-indigo-500 pb-4">
 	                        Post
 	                    </div>
 	                </a>
 	                <a href="#">
 	                    <div
-	                        class="text-gray-700 px-4  font-bold text-xl transition-all hover:text-indigo-500 border-b-4 hover:border-indigo-500 border-transparent    cursor-pointer pb-4 ">
+	                        class="text-gray-700 px-4  font-bold lg:text-xl md:text-lg transition-all hover:text-indigo-500 border-b-4 hover:border-indigo-500 border-transparent    cursor-pointer pb-4 ">
 	                        About
 	                    </div>
 	                </a>
 	                <a href="#">
 	                    <div
-	                        class="text-gray-700 px-4  font-bold text-xl transition-all hover:text-indigo-500 border-b-4 hover:border-indigo-500 border-transparent cursor-pointer pb-4 ">
+	                        class="text-gray-700 px-4  font-bold lg:text-xl md:text-lg transition-all hover:text-indigo-500 border-b-4 hover:border-indigo-500 border-transparent cursor-pointer pb-4 ">
 	                        Backer
 	                    </div>
 	                </a>
@@ -352,19 +350,19 @@
 	
 	            <div class="border-b my-4"></div>
 	
-	            <div class="sticky-x top-0-x transition-ease-in transition-delay-1000 transition-1000">
+	            <div class="pb-20">
 	            
-	                <div class="mt-2 px-2 font-bold text-right text-lg  text-gray-700">Featured Donee</div>
+	                <div class="mt-2 px-2 font-bold text-right text-lg  text-gray-700">Recommended Community</div>
 	            
 	                <div class="py-2">
 	                    <a href="#">
 	                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
 	                            <div
-	                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+	                                class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-500">
 	                                123
 	                                Backer
 	                            </div>
-	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
+	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-32 w-full object-cover">
 	                            <div class="flex justify-center">
 	                                <img src="/assets/images/bg/avatar.jpeg"
 	                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
@@ -383,11 +381,11 @@
 	                    <a href="#">
 	                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
 	                            <div
-	                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+	                                class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-500">
 	                                123
 	                                Backer
 	                            </div>
-	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
+	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-32 w-full object-cover">
 	                            <div class="flex justify-center">
 	                                <img src="/assets/images/bg/avatar.jpeg"
 	                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
@@ -411,7 +409,7 @@
 	
 	<div class="bottom-0 fixed w-full">
 	    <!-- footer -->
-	    <footer class="font-sans gradient-backer text-white py-2 px-4">
+	    <footer class="font-sans bg-white shadow-lg border-gray-300 border-t-2 text-gray-700 py-2 px-4">
 	      <div class="mx-auto container overflow-hidden flex justify-between items-center">
 	        <p class="inline-block py-2 px-3 "> ©2019 VirKill. All rights reserved.</p>
 	        <ul class=" flex items-center">
@@ -441,6 +439,7 @@
 		var header = document.getElementById("header");
 		var navcontent = document.getElementById("nav-content");
 		var navaction = document.getElementById("navAction");
+		var navtoggle = document.getElementById("nav-toggle");
 		var navitem = document.getElementById("navItem");
 		var brandname = document.getElementById("brand");
 		var toToggle = document.querySelectorAll(".toggleColour");
@@ -452,26 +451,30 @@
 
 			if (scrollpos > 10) {
 				brandname.src = "/assets/images/logo/backer-bg-white.png";
-				header.classList.add("bg-white");
-				header.classList.remove("gradient");
 				navaction.classList.remove("bg-white");
 				navitem.classList.remove("text-white");
 				navitem.classList.add("text-gray-700");
 				navaction.classList.add("gradient");
-
+				navtoggle.classList.remove("text-white");
+				navtoggle.classList.remove("border-white");
+				navtoggle.classList.add("text-gray-800");
+				navtoggle.classList.add("border-gray-800");
 				//Use to switch toggleColour colours
 				for (var i = 0; i < toToggle.length; i++) {
 					toToggle[i].classList.add("text-gray-800");
 					toToggle[i].classList.remove("text-white");
 				}
 				header.classList.add("shadow");
-				navcontent.classList.remove("bg-gray-100");
+				header.classList.add("bg-white");
+				header.classList.remove("bg-transparent");
+				navcontent.classList.remove("bg-black");
 				navcontent.classList.add("bg-white");
 			}
 			else {
 				brandname.src = "/assets/images/logo/backer-bg-indigo.png";
 				header.classList.remove("bg-white");
 				header.classList.add("bg-tranparant");
+				header.classList.add("shadow");
 				navaction.classList.remove("gradient");
 				navaction.classList.add("bg-white");
 				navitem.classList.remove("text-gray-700");
@@ -486,7 +489,11 @@
 
 				header.classList.remove("shadow");
 				navcontent.classList.remove("bg-white");
-				navcontent.classList.add("bg-gray-100");
+				navcontent.classList.add("bg-black");
+				navtoggle.classList.add("text-white");
+				navtoggle.classList.add("border-white");
+				navtoggle.classList.remove("text-gray-800");
+				navtoggle.classList.remove("border-gray-800");
 
 			}
 
