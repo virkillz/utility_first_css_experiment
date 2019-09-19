@@ -2,341 +2,554 @@
 <html lang="en">
 
 <head>
-    <!-- Required Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tailwind Starter Template - Landing Page Template: Tailwind Toolbox</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
 
-    <title> Blah :: Backer Timeline Private</title>
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">
+	<!-- Font Awesome if you need it
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css"> -->
+	<!--Replace with your tailwind.css once created-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/line-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">
 
-    <!--Core CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"> -->
 
-    <style>
-        .gradient {
-            background: linear-gradient(90deg, #805ad5 0%, #f6ad55 100%);
+	<!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+	<style>
+		/* .gradient {
+			background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+			"
 
-        }
+		} */
 
-        .gradient-backer {
-            background: linear-gradient(90deg, #805ad5 0%, #9f7aea 100%);
+		.gradient {
+			background: linear-gradient(95deg, #5F81F9 0%, #FF8C8C 100%);
 
-        }
+		}
 
-        .gradient-donee {
-            background: linear-gradient(90deg, #ed8936 0%, #f6ad55 100%);
+		.gradient-backer {
+			background: linear-gradient(90deg, #805ad5 0%, #9f7aea 100%);
 
-        }
+		}
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2
-        }
-    </style>
+		.gradient-donee {
+			background: linear-gradient(90deg, #ed8936 0%, #f6ad55 100%);
 
+		}
 
+		tr:nth-child(even) {
+			background-color: #f2f2f2
+		}
+
+		.btn-glow-orange:hover {
+			box-shadow: 0 3px 10px rgba(255, 196, 0, 0.4);
+		}
+
+		.polkadot:before {
+			background-image: url(/assets/images/bg/inner_bg_shapes.png);
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		.polkadot-footer:before {
+			background-image: url(/assets/images/bg/inner_bg_shapes.png);
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 600px;
+			z-index: 1;
+		}
+
+		.banner_shapes img {
+			position: absolute;
+			z-index: 1;
+		}
+
+		.agency_1 {
+			top: 160px;
+			left: 6%;
+		}
+
+		.agency_2 {
+			top: 170px;
+			right: 30%;
+			width: 93px;
+		}
+
+		.agency_3 {
+			top: 0px;
+			right: 12%;
+		}
+
+		.agency_6 {
+			top: 25px;
+			left: 27%;
+			width: 133px;
+		}
+	</style>
 
 </head>
 
-<body class="bg-gray-100">
-    
-    <!-- header -->
-    <div class="w-full gradient">
-      <nav class="font-sans py-1 font-semibold text-md text-white gradient-backer text-center shadow-md">
-        <div class="container mx-auto tracking-wide flex justify-between items-center">
-          <a href="/" class="block text-left">
-            <img src="/assets/images/logo.png" class="h-10 sm:h-10 " alt="logo">
-          </a>
-          <ul class="text-sm flex items-center">
-            <li class="py-2 px-4"><a href="#"
-                class="inline-block text-md hover:text-orange-500 no-underline transition-all">Kategori</a>
-            </li>
-            <li class="py-2 px-4"><a href="#"
-                class="inline-block text-md hover:text-orange-500 no-underline transition-all">Blog</a>
-            </li>
-            <li class="rounded-full bg-purple-400 px-4 py-1">
-              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-                  class="la la-home"></i></i>
-              </a>
-              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-                  class="la la-bell"></i></i>
-              </a>
-              <a href="#" class="inline-block text-3xl hover:text-orange-500 no-underline px-2 transition-all"><i
-                  class="la la-search"></i></i>
-              </a>
-            </li>
-            <li class="py-2 px-4"><a href="#" class="flex items-center">
-                <img src="/assets/images/bg/avatar2.jpeg" class="rounded-full border-4 border-white w-16">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <!-- /header -->
-    <div class="pt-10 container mx-auto flex">
-    
-        <div class="w-1/4 px-4">
-            <div class="sticky top-0 transition-all">
-    
-                <a href="/backer-timeline.html">
-                    <div
-                        class="mb-2 cursor-pointer py-2 px-6 font-semibold text-lg rounded-full text-purple-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                        <i class="la la-home text-2xl font-bold mr-4"></i>
-                        <span class="font-title"> Linimasa</span>
-                    </div>
-                </a>
-                
-                <a href="/backer-my-donee.html">
-                    <div
-                        class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                        <i class="la la-leaf text-2xl font-bold mr-4"></i>
-                        <span class="font-title"> Donee </span>
-                    </div>
-                </a>
-                
-                <a href="/backer-riwayat-donasi.html">
-                    <div
-                        class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                        <i class="la la-credit-card text-2xl font-bold mr-4"></i>
-                        <span class="font-title"> Riwayat Donasi</span>
-                    </div>
-                </a>
-                
-                <a href="/backer-pengaturan.html">
-                    <div
-                        class="mb-2 cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
-                        <i class="la la-cog text-2xl font-bold mr-4"></i>
-                        <span class="font-title"> Pengaturan</span>
-                    </div>
-                </a>
-    
-    
-                <div class="border-b-2 my-8"></div>
-    
-                <div class="my-4 font-bold text-lg font-title text-gray-700">Kategori</div>
-                
-                <div class="pl-6">
-                    <ul class="text-gray-700">
-                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Musik</a></li>
-                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Seni</a></li>
-                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Hobi</a></li>
-                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Pendidikan</a></li>
-                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Sosial</a></li>
-                    </ul>
-                </div>            <div class="mt-8 font-bold text-lg font-title text-gray-700">Akses cepat</div>
-                
-                <div class="pl-6">
-                    <ul class="text-gray-700">
-                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Menjadi Donee</a></li>
-                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Donee Academy</a></li>
-                        <li class="my-2"><a href="#" class="transition-all hover:font-bold">Event</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    
-        <div class="w-2/4 px-4 pb-20">
-    
-            <div class="py-2">
-    
-    
-                <div class="bg-white mb-8 relative shadow-md rounded-t-lg text-gray-600 hover:shadow-lg">
-                    <div
-                        class="right-0 mt-2 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-green-500">
-                        Active supporter
-                    </div>
-                    <img src="/assets/images/bg/komunitas.jpeg" class="object-cover h-32 w-full" style="max-height: 200px;">
-                    <div class="ml-4">
-                        <img src="https://i.pravatar.cc/80" class="rounded-full -mt-12 border-4 border-white mr-2 h-20">
-                    </div>
-                    <div class="p-2 -mt-8 ml-24">
-                        <div class="font-title font-bold ">Komunitas Kreasi Bersama</div>
-                        <div class="font-semibold text-sm text-gray-600">seguci • 21 backers</div>
-                    </div>
-                    <div class="px-4">
-                        <div class="flex text-center rounded justify-between p-2 bg-gray-200">
-                            <div class="w-1/3">
-                                <div class="font-semibold text-sm text-gray-600">Status Backing</div>
-                                <div class="text-center text-green-500">Aktif</div>
-                            </div>
-                            <div class="w-1/3">
-                                <div class="font-semibold text-sm text-gray-600">Backer sejak</div>
-                                <div class="text-center">Juli 2019</div>
-                            </div>
-                            <div class="w-1/3">
-                                <div class="font-semibold text-sm text-gray-600">Level</div>
-                                <div class="text-center">Supporter</div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="flex text-center justify-center p-4">
-                        <div class="mx-2">
-                            <button
-                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Riwayat
-                                Donasi</button>
-                        </div>
-                        <div class="mx-2">
-                            <button
-                                class="px-6 py-2 text-sm rounded-full bg-purple-600 text-white transition-all border border-purple-600">Kunjungi</button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="bg-white mb-8 relative shadow-md rounded-t-lg text-gray-600 hover:shadow-lg">
-                    <div
-                        class="right-0 mt-2 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-gray-500">
-                        Inactive Bro
-                    </div>
-                    <img src="/assets/images/bg/komunitas.jpeg" class="object-cover h-32 w-full" style="max-height: 200px;">
-                    <div class="ml-4">
-                        <img src="https://i.pravatar.cc/80" class="rounded-full -mt-12 border-4 border-white mr-2 h-20">
-                    </div>
-                    <div class="p-2 -mt-8 ml-24">
-                        <div class="font-title font-bold ">Anda Bertanya Ateis Menjawab</div>
-                        <div class="font-semibold text-sm text-gray-600">abam • 2112 backers</div>
-                    </div>
-                    <div class="px-4">
-                        <div class="flex text-center rounded justify-between p-2 bg-gray-200">
-                            <div class="w-1/3">
-                                <div class="font-semibold text-sm text-gray-600">Status Backing</div>
-                                <div class="text-center text-gray-500">Inaktif</div>
-                            </div>
-                            <div class="w-1/3">
-                                <div class="font-semibold text-sm text-gray-600">Backer sejak</div>
-                                <div class="text-center">Juli 2019</div>
-                            </div>
-                            <div class="w-1/3">
-                                <div class="font-semibold text-sm text-gray-600">Level</div>
-                                <div class="text-center">Bro</div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="flex text-center justify-center p-4">
-                        <div class="mx-2">
-                            <button
-                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Riwayat
-                                Donasi</button>
-                        </div>
-                        <div class="mx-2">
-                            <button
-                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Kunjungi</button>
-                        </div>
-    
-                        <div class="mx-2">
-                            <button
-                                class="px-6 py-2 text-sm rounded-full bg-green-600 text-white transition-all border border-green-600">Aktifkan</button>
-                        </div>
-                    </div>
-                </div>
-    
-    
-            </div>
-    
-    
-    
-        </div>
-        <div class="w-1/4 px-4">
-    
-            <div class="py-1">
-                <div class="bg-purple-200 px-4 py-2 rounded-full w-full">
-                    <i class="la la-search text-white mr-2"></i></i>
-                    <input type="text" class="text-gray-600 bg-purple-200 focus:outline-none">
-                </div>
-            </div>
-    
-            <div class="border-b my-4"></div>
-    
-            <div class="sticky-x top-0-x transition-ease-in transition-delay-1000 transition-1000">
-            
-                <div class="mt-2 px-2 font-bold text-right text-lg font-title text-gray-700">Featured Donee</div>
-            
-                <div class="py-2">
-                    <a href="#">
-                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
-                            <div
-                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
-                                123
-                                Backer
-                            </div>
-                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
-                            <div class="flex justify-center">
-                                <img src="/assets/images/bg/avatar.jpeg"
-                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
-                            </div>
-                            <div class="py-2 px-2">
-                                <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
-                                <div class="font-semibold text-center text-xs text-gray-600">seguci • 21 backers</div>
-                                <div class="text-sm text-center my-2">Menjalankan keberagaman kreasi bagi anak jalanan</div>
-                            </div>
-                        </div>
-                    </a>
-            
-                </div>
-            
-                <div class="py-2">
-                    <a href="#">
-                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
-                            <div
-                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
-                                123
-                                Backer
-                            </div>
-                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
-                            <div class="flex justify-center">
-                                <img src="/assets/images/bg/avatar.jpeg"
-                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
-                            </div>
-                            <div class="py-2 px-2">
-                                <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
-                                <div class="font-semibold text-center text-xs text-gray-600">seguci • 21 backers</div>
-                                <div class="text-sm text-center my-2">Menjalankan keberagaman kreasi bagi anak jalanan</div>
-                            </div>
-                        </div>
-                    </a>
-            
-                </div>
-            
-            </div>
-        </div>
-    </div>
-    
-    <div class="bottom-0 fixed w-full">
-        <!-- footer -->
-        <footer class="font-sans gradient-backer text-white py-2 px-4">
-          <div class="mx-auto container overflow-hidden flex justify-between items-center">
-            <p class="inline-block py-2 px-3 "> ©2019 VirKill. All rights reserved.</p>
-            <ul class=" flex items-center">
-              <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">Product</a></li>
-              <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">Company</a></li>
-              <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">FAQs</a></li>
-              <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">About Us</a></li>
-            </ul>
-          </div>
-        </footer>
-        <!-- /footer --></div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script>
-        $(document).ready( function () {
-            $('#buyTransactions').dataTable( {
-                "pageLength": 5
-            } );
-            $('#sellTransactions').dataTable( {
-                "pageLength": 5
-            } );
-        } );
-    
-        document.getElementById('nav-toggle').onclick = function(){
-            document.getElementById("nav-content").classList.toggle("nav-block");
-    	}
-    </script></body>
+<body class="tracking-normal text-gray-700 gradient polkadot">
+
+
+	
+	<nav id="header" class="h-18 fixed transition-all transition-ease w-full z-30 top-0 text-white">
+	
+	    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+	
+	        <div class="pl-4 flex items-center">
+	            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
+	                <img src="/assets/images/logo/backer-bg-indigo.png" class="h-8 " id="brand" alt="">
+	            </a>
+	        </div>
+	
+	        <div class="block lg:hidden pr-4">
+	            <button id="nav-toggle"
+	                class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
+	                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+	                    <title>Menu</title>
+	                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+	                </svg>
+	            </button>
+	        </div>
+	
+	        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-black lg:bg-transparent text-black p-4 lg:p-0 z-20"
+	            id="nav-content">
+	            <ul class="list-reset lg:flex text-white font-title justify-end flex-1 items-center" id="navItem">
+	                <li class="mr-3">
+	                    <a class="inline-block py-2 px-4 font-title font-bold text-orange-500 no-underline"
+	                        href="#">Home</a>
+	                </li>
+	                <li class="mr-3">
+	                    <a class="inline-block no-underline hover:text-orange-500 hover:text-underline py-2 px-4"
+	                        href="#">Explore</a>
+	                </li>
+	                <li class="mr-3">
+	                    <a class="inline-block no-underline hover:text-orange-500 hover:text-underline py-2 px-4"
+	                        href="#">Start Donee page</a>
+	                </li>
+	            </ul>
+	            <a href="/register.html"> <button id="navAction"
+	                    class="mr-2 hover:underline bg-orange-500 text-white font-semibold rounded-full mt-4 lg:mt-0 py-2 px-8 shadow">Sign
+	                    Up</button></a>
+	
+	            <a href="/login.html"> <button
+	                    class="hover:underline bg-white text-gray-800 font-semibold text-indigo-500 rounded-full mt-4 lg:mt-0 py-2 px-8 ">Login</button></a>
+	
+	        </div>
+	    </div>
+	
+	</nav>
+	<div class="bg-gray-200 mt-16">
+	    <div class="pt-10 container mx-auto lg:flex">
+	
+	        <div class="lg:w-1/4 px-4">
+	            <div class="sticky top-0 transition-all">
+	
+	                <div class="flex lg:block items-center">
+	                
+	                    <a href="/backer-timeline.html">
+	                        <div
+	                            class="mb-2 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 font-semibold rounded-full text-purple-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+	                            <i class="la la-home text-4xl font-bold lg:mr-4"></i>
+	                            <div class="font-title lg:text-lg md:text-md text-sm"> Linimasa</div>
+	                        </div>
+	                    </a>
+	                
+	                    <a href="/backer-my-donee.html">
+	                        <div
+	                            class="mb-2 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+	                            <i class="la la-leaf text-2xl font-bold lg:mr-4"></i>
+	                            <div class="font-title lg:text-lg md:text-md text-sm"> Donee </div>
+	                        </div>
+	                    </a>
+	                
+	                    <a href="/backer-riwayat-donasi.html">
+	                        <div
+	                            class="mb-2 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+	                            <i class="la la-credit-card text-2xl font-bold lg:mr-4"></i>
+	                            <div class="font-title lg:text-lg md:text-md text-sm"> Riwayat Donasi</div>
+	                        </div>
+	                    </a>
+	                
+	                    <a href="/backer-pengaturan.html">
+	                        <div
+	                            class="mb-2 text-center lg:text-left lg:flex cursor-pointer py-2 px-6 hover:font-semibold text-lg rounded-full text-gray-700 hover:text-purple-700 hover:bg-purple-200 transition-all transition-ease transition-500">
+	                            <i class="la la-cog text-2xl font-bold lg:mr-4"></i>
+	                            <div class="font-title lg:text-lg md:text-md text-sm"> Pengaturan</div>
+	                        </div>
+	                    </a>
+	                </div>
+	
+	
+	                <div class="border-b-2 my-8"></div>
+	
+	                <div class="hidden lg:block">
+	                
+	                    <div class="my-4 font-bold text-lg font-title text-gray-700">Kategori</div>
+	                
+	                    <div class="pl-6">
+	                        <ul class="text-gray-700 flex lg:block">
+	                            <li class="my-2 px-2"><a href="#" class="transition-all hover:font-bold">Musik</a></li>
+	                            <li class="my-2 px-2"><a href="#" class="transition-all hover:font-bold">Seni</a></li>
+	                            <li class="my-2 px-2"><a href="#" class="transition-all hover:font-bold">Hobi</a></li>
+	                            <li class="my-2 px-2"><a href="#" class="transition-all hover:font-bold">Pendidikan</a></li>
+	                            <li class="my-2 px-2"><a href="#" class="transition-all hover:font-bold">Sosial</a></li>
+	                        </ul>
+	                    </div>
+	                </div>                <div class="hidden">
+	                    <div class="mt-8 font-bold text-lg font-title text-gray-700">Akses cepat</div>
+	                
+	                    <div class="pl-6">
+	                        <ul class="text-gray-700 flex lg:block">
+	                            <li class="my-2 px-2"><a href="#" class="transition-all hover:font-bold">Menjadi Donee</a></li>
+	                            <li class="my-2 px-2"><a href="#" class="transition-all hover:font-bold">Donee Academy</a></li>
+	                            <li class="my-2 px-2"><a href="#" class="transition-all hover:font-bold">Event</a></li>
+	                        </ul>
+	                    </div>
+	                
+	                </div>
+	            </div>
+	
+	        </div>
+	
+	        <div class="lg:w-2/4 px-4 pb-20">
+	
+	            <div class="py-2">
+	
+	
+	                <div class="bg-white mb-8 relative shadow-md rounded-t-lg text-gray-600 hover:shadow-lg">
+	                    <div
+	                        class="right-0 mt-8 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-green-500">
+	                        Active supporter
+	                    </div>
+	
+	                    <div class="flex items-center p-4">
+	                        <div class="ml-4">
+	                            <img src="https://i.pravatar.cc/80" class="rounded-full border-4 border-white mr-2 h-20">
+	                        </div>
+	                        <div class="p-2">
+	                            <div class="font-title font-bold ">Komunitas Sekolah Bersama</div>
+	                            <div class="font-semibold text-sm text-gray-600">senggama • 10001 backers</div>
+	                        </div>
+	                    </div>
+	                    <div class="px-4">
+	                        <div class="flex text-center rounded justify-between p-2 bg-gray-200">
+	                            <div class="w-1/3">
+	                                <div class="font-semibold text-sm text-gray-600">Status Backing</div>
+	                                <div class="text-center text-green-500">Aktif</div>
+	                            </div>
+	                            <div class="w-1/3">
+	                                <div class="font-semibold text-sm text-gray-600">Backer sejak</div>
+	                                <div class="text-center">Juli 2019</div>
+	                            </div>
+	                            <div class="w-1/3">
+	                                <div class="font-semibold text-sm text-gray-600">Level</div>
+	                                <div class="text-center">Supporter</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	
+	                    <div class="flex text-center justify-center p-4">
+	                        <div class="mx-2">
+	                            <button
+	                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Riwayat
+	                                Donasi</button>
+	                        </div>
+	                        <div class="mx-2">
+	                            <button
+	                                class="px-6 py-2 text-sm rounded-full bg-purple-600 text-white transition-all border border-purple-600">Kunjungi</button>
+	                        </div>
+	                    </div>
+	                </div>
+	
+	                <div class="bg-white mb-8 relative shadow-md rounded-t-lg text-gray-600 hover:shadow-lg">
+	                    <div
+	                        class="right-0 mt-8 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-gray-500">
+	                        Inactive Bro
+	                    </div>
+	                    <div class="flex items-center p-4">
+	                        <div class="ml-4">
+	                            <img src="https://i.pravatar.cc/80" class="rounded-full border-4 border-white mr-2 h-20">
+	                        </div>
+	                        <div class="p-2">
+	                            <div class="font-title font-bold ">Anda Bertanya Ateis Menjawab</div>
+	                            <div class="font-semibold text-sm text-gray-600">abam • 2112 backers</div>
+	                        </div>
+	                    </div>
+	
+	                    <div class="px-4">
+	                        <div class="flex text-center rounded justify-between p-2 bg-gray-200">
+	                            <div class="w-1/3">
+	                                <div class="font-semibold text-sm text-gray-600">Status Backing</div>
+	                                <div class="text-center text-gray-500">Inaktif</div>
+	                            </div>
+	                            <div class="w-1/3">
+	                                <div class="font-semibold text-sm text-gray-600">Backer sejak</div>
+	                                <div class="text-center">Juli 2019</div>
+	                            </div>
+	                            <div class="w-1/3">
+	                                <div class="font-semibold text-sm text-gray-600">Level</div>
+	                                <div class="text-center">Bro</div>
+	                            </div>
+	                        </div>
+	                    </div>
+	
+	                    <div class="flex text-center justify-center p-4">
+	                        <div class="mx-2">
+	                            <button
+	                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Riwayat
+	                                Donasi</button>
+	                        </div>
+	                        <div class="mx-2">
+	                            <button
+	                                class="px-6 py-2 text-sm rounded-full hover:bg-purple-600 hover:text-white transition-all transition-500 text-purple-600 border border-purple-600">Kunjungi</button>
+	                        </div>
+	
+	                        <div class="mx-2">
+	                            <button
+	                                class="px-6 py-2 text-sm rounded-full bg-green-600 text-white transition-all border border-green-600">Aktifkan</button>
+	                        </div>
+	                    </div>
+	                </div>
+	
+	
+	            </div>
+	
+	
+	
+	        </div>
+	        <div class="lg:w-1/4 px-4">
+	
+	
+	
+	            <div class="py-1">
+	                <div class="bg-purple-200 px-4 py-2 rounded-full w-full flex items-center">
+	                    <i class="la la-search text-white mr-2"></i></i>
+	                    <input type="text" class="text-gray-600 bg-purple-200 focus:outline-none">
+	                </div>
+	            </div>
+	            <div class="border-b my-4"></div>
+	
+	            <div class="sticky-x top-0-x transition-ease-in transition-delay-1000 transition-1000">
+	            
+	                <div class="mt-2 px-2 font-bold text-right text-lg font-title text-gray-700">Featured Donee</div>
+	            
+	                <div class="py-2">
+	                    <a href="#">
+	                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
+	                            <div
+	                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+	                                123
+	                                Backer
+	                            </div>
+	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
+	                            <div class="flex justify-center">
+	                                <img src="/assets/images/bg/avatar.jpeg"
+	                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
+	                            </div>
+	                            <div class="py-2 px-2">
+	                                <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
+	                                <div class="font-semibold text-center text-xs text-gray-600">seguci • 21 backers</div>
+	                                <div class="text-sm text-center my-2">Menjalankan keberagaman kreasi bagi anak jalanan</div>
+	                            </div>
+	                        </div>
+	                    </a>
+	            
+	                </div>
+	            
+	                <div class="py-2">
+	                    <a href="#">
+	                        <div class="bg-white relative shadow p-2 text-gray-600 hover:shadow-lg">
+	                            <div
+	                                class="right-0 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-purple-500">
+	                                123
+	                                Backer
+	                            </div>
+	                            <img src="/assets/images/bg/komunitas.jpeg" class="h-36">
+	                            <div class="flex justify-center">
+	                                <img src="/assets/images/bg/avatar.jpeg"
+	                                    class="rounded-full -mt-6 border-4 border-white mr-2 h-16 w-16">
+	                            </div>
+	                            <div class="py-2 px-2">
+	                                <div class="font-title font-bold text-center">Komunitas Kreasi Bersama</div>
+	                                <div class="font-semibold text-center text-xs text-gray-600">seguci • 21 backers</div>
+	                                <div class="text-sm text-center my-2">Menjalankan keberagaman kreasi bagi anak jalanan</div>
+	                            </div>
+	                        </div>
+	                    </a>
+	            
+	                </div>
+	            
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	
+	
+	<div class="bottom-0 fixed w-full">
+	    <!-- footer -->
+	    <footer class="font-sans gradient-backer text-white py-2 px-4">
+	      <div class="mx-auto container overflow-hidden flex justify-between items-center">
+	        <p class="inline-block py-2 px-3 "> ©2019 VirKill. All rights reserved.</p>
+	        <ul class=" flex items-center">
+	          <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">Product</a></li>
+	          <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">Company</a></li>
+	          <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">FAQs</a></li>
+	          <li><a href="#" class="inline-block py-2 px-3  hover:text-gray-400 no-underline">About Us</a></li>
+	        </ul>
+	      </div>
+	    </footer>
+	    <!-- /footer --></div>
+
+
+
+
+
+
+
+
+	<!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+
+	<script>
+
+		var scrollpos = window.scrollY;
+		var header = document.getElementById("header");
+		var navcontent = document.getElementById("nav-content");
+		var navaction = document.getElementById("navAction");
+		var navitem = document.getElementById("navItem");
+		var brandname = document.getElementById("brand");
+		var toToggle = document.querySelectorAll(".toggleColour");
+
+		document.addEventListener('scroll', function () {
+
+			/*Apply classes for slide in bar*/
+			scrollpos = window.scrollY;
+
+			if (scrollpos > 10) {
+				brandname.src = "/assets/images/logo/backer-bg-white.png";
+				header.classList.add("bg-white");
+				header.classList.remove("gradient");
+				navaction.classList.remove("bg-white");
+				navitem.classList.remove("text-white");
+				navitem.classList.add("text-gray-700");
+				navaction.classList.add("gradient");
+
+				//Use to switch toggleColour colours
+				for (var i = 0; i < toToggle.length; i++) {
+					toToggle[i].classList.add("text-gray-800");
+					toToggle[i].classList.remove("text-white");
+				}
+				header.classList.add("shadow");
+				navcontent.classList.remove("bg-gray-100");
+				navcontent.classList.add("bg-white");
+			}
+			else {
+				brandname.src = "/assets/images/logo/backer-bg-indigo.png";
+				header.classList.remove("bg-white");
+				header.classList.add("bg-tranparant");
+				navaction.classList.remove("gradient");
+				navaction.classList.add("bg-white");
+				navitem.classList.remove("text-gray-700");
+				navitem.classList.add("text-white");
+
+
+				//Use to switch toggleColour colours
+				for (var i = 0; i < toToggle.length; i++) {
+					toToggle[i].classList.add("text-white");
+					toToggle[i].classList.remove("text-gray-800");
+				}
+
+				header.classList.remove("shadow");
+				navcontent.classList.remove("bg-white");
+				navcontent.classList.add("bg-gray-100");
+
+			}
+
+		});
+
+
+	</script>
+
+	<script>
+
+
+		/*Toggle dropdown list*/
+		/*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+		var navMenuDiv = document.getElementById("nav-content");
+		var navMenu = document.getElementById("nav-toggle");
+
+		document.onclick = check;
+		function check(e) {
+			var target = (e && e.target) || (event && event.srcElement);
+
+			//Nav Menu
+			if (!checkParent(target, navMenuDiv)) {
+				// click NOT on the menu
+				if (checkParent(target, navMenu)) {
+					// click on the link
+					if (navMenuDiv.classList.contains("hidden")) {
+						navMenuDiv.classList.remove("hidden");
+					} else { navMenuDiv.classList.add("hidden"); }
+				} else {
+					// click both outside link and outside menu, hide menu
+					navMenuDiv.classList.add("hidden");
+				}
+			}
+
+		}
+		function checkParent(t, elm) {
+			while (t.parentNode) {
+				if (t == elm) { return true; }
+				t = t.parentNode;
+			}
+			return false;
+		}
+	</script>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				/* Toggle between adding and removing the "active" class,
+				to highlight the button that controls the panel */
+				this.classList.toggle("active");
+
+				/* Toggle between hiding and showing the active panel */
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+
+
+</body>
 
 </html>
