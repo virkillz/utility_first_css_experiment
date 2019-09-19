@@ -221,7 +221,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        // 'Nunito',
+        'Open Sans',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',
