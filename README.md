@@ -6,9 +6,9 @@
 - [ ] Onboarding flow for Donee
 - [x] Some page not yet responsive
 - [x] Featured donee's banner needs to be smaller
-- [ ] Accept term and condition for sign up
-- [ ] link to login at sign up
-- [ ] link to forget password at sign-in
+- [x] Accept term and condition for sign up
+- [x] link to login at sign up
+- [x] link to forget password at sign-in
 - [ ] Switch Language at header
 - [x] Fix Header font
 - [ ] Fix Footer
