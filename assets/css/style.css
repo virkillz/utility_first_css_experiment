@@ -607,6 +607,77 @@ body{
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.gradient {
+  background: linear-gradient(95deg, #5F81F9 0%, #FF8C8C 100%);
+}
+
+.gradient-backer {
+  background: -webkit-gradient(linear, left top, right top, from(#805ad5), to(#9f7aea));
+  background: linear-gradient(90deg, #805ad5 0%, #9f7aea 100%);
+}
+
+.gradient-donee {
+  background: -webkit-gradient(linear, left top, right top, from(#ed8936), to(#f6ad55));
+  background: linear-gradient(90deg, #ed8936 0%, #f6ad55 100%);
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.btn-glow-orange:hover {
+  box-shadow: 0 3px 10px rgba(255, 196, 0, 0.4);
+}
+
+.polkadot:before {
+  background-image: url(/assets/images/bg/inner_bg_shapes.png);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.polkadot-footer:before {
+  background-image: url(/assets/images/bg/inner_bg_shapes.png);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: 1;
+}
+
+.banner_shapes img {
+  position: absolute;
+  z-index: 1;
+}
+
+.agency_1 {
+  top: 160px;
+  left: 6%;
+}
+
+.agency_2 {
+  top: 170px;
+  right: 30%;
+  width: 93px;
+}
+
+.agency_3 {
+  top: 0px;
+  right: 12%;
+}
+
+.agency_6 {
+  top: 25px;
+  left: 27%;
+  width: 133px;
+}
+
 .container {
   width: 100%;
 }
