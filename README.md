@@ -2,21 +2,17 @@
 
 ## TODO BIG
 
-- [x] Header for logged in Donee/Backer
-- [ ] Onboarding flow for Donee
-- [x] Some page not yet responsive
-- [x] Featured donee's banner needs to be smaller
-- [x] Accept term and condition for sign up
-- [x] link to login at sign up
-- [x] link to forget password at sign-in
-- [ ] Switch Language at header
-- [x] Fix Header font
-- [ ] Fix Footer
-- [x] Create Header Variant 
+### All screen is finish designed
+- [x] Donee registration page
+- [x] Thank you for submit
+- [ ] Invoice detail page 
+- [x] Notification page
+- [x] Search result page
+- [ ] Private settlement detail
+
 
 ## PHASE 1 Feature
-
-- [ ] Backer can register
+- [x] Backer can register
 - [ ] Donee can register separately
 - [ ] Donee can post
 - [ ] Backer can donate
