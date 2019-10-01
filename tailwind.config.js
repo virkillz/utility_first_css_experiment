@@ -221,12 +221,14 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Open Sans',
+        // 'Open Sans',
         '-apple-system',
+        'system-ui',
         'BlinkMacSystemFont',
         '"Segoe UI"',
         'Roboto',
         '"Helvetica Neue"',
+        'Ubuntu',
         'Arial',
         '"Noto Sans"',
         'sans-serif',
