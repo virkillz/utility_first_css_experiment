@@ -48,17 +48,6 @@ module.exports = {
         800: '#9c4221',
         900: '#7b341e',
       },
-      yellow: {
-        100: '#fffff0',
-        200: '#fefcbf',
-        300: '#faf089',
-        400: '#f6e05e',
-        500: '#ecc94b',
-        600: '#d69e2e',
-        700: '#b7791f',
-        800: '#975a16',
-        900: '#744210',
-      },
       green: {
         100: '#f0fff4',
         200: '#c6f6d5',
@@ -113,18 +102,7 @@ module.exports = {
         700: '#6b46c1',
         800: '#553c9a',
         900: '#44337a',
-      },
-      pink: {
-        100: '#fff5f7',
-        200: '#fed7e2',
-        300: '#fbb6ce',
-        400: '#f687b3',
-        500: '#ed64a6',
-        600: '#d53f8c',
-        700: '#b83280',
-        800: '#97266d',
-        900: '#702459',
-      },
+      }
     },
     spacing: {
       px: '1px',
@@ -146,6 +124,8 @@ module.exports = {
       '48': '12rem',
       '56': '14rem',
       '64': '16rem',
+      '72': '18rem',
+      '80': '20rem'
     },
     backgroundColor: theme => theme('colors'),
     backgroundPosition: {
@@ -253,7 +233,15 @@ module.exports = {
         'monospace',
       ],
       title: [
-        'Montserrat'
+        'Montserrat',
+        '-apple-system',
+        'system-ui',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Ubuntu',
+        'Arial'
       ],
     },
     fontSize: {
@@ -274,11 +262,9 @@ module.exports = {
       thin: '200',
       light: '300',
       normal: '400',
-      medium: '500',
       semibold: '600',
       bold: '700',
-      extrabold: '800',
-      black: '900',
+      extrabold: '800'
     },
     height: theme => ({
       auto: 'auto',
@@ -355,6 +341,7 @@ module.exports = {
     },
     opacity: {
       '0': '0',
+      '10': '0.10',
       '25': '0.25',
       '50': '0.5',
       '75': '0.75',

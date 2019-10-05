@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="assets/css/line-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/line-awesome-font-awesome.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.19.1/ui/trumbowyg.min.css"
+		integrity="sha256-iS3knajmo8cvwnS0yrVDpNnCboUEwZMJ6mVBEW1VcSA=" crossorigin="anonymous" />
 
 
 </head>
@@ -186,26 +188,133 @@
 	            <div class="py-2">
 	
 	
-	                <div class="bg-white flex p-4 mb-8 relative shadow-md rounded-lg text-gray-600 hover:shadow-lg">
-	                    <div class="w-1/3">
-	                        <div class="flex justify-center">
-	                            <img src="/assets/images/bg/avatar.jpeg" class="rounded-lg border-4 border-white ">
+	                <div class="bg-white p-8 mb-8 relative shadow-md rounded-lg text-gray-800 hover:shadow-lg">
+	                    <div class="flex justify-between">
+	                        <div class="font-title text-xl font-bold">Edit Profile</div>
+	                        <button
+	                            class="focus:outline-none tracking-wide px-6 py-1 outline-none text-purple-500 transition-all transition-ease hover:bg-purple-600 hover:text-white rounded-lg border-purple-500 border-2">Save</button>
+	                    </div>
+	
+	                    <div class="border-b my-2"></div>
+	
+	                    <div class="flex">
+	                        <div class="w-1/2 p-2">
+	                            <div class="w-full">
+	                                <img src="/assets/images/bg/avatar.jpeg" class="mx-auto rounded-lg ">
+	                            </div>
+	                            <div class="p-4 text-center">
+	                                <button
+	                                    class="mx-auto px-2 py-px rounded text-purple-600 border border-purple-600">Change</button>
+	                            </div>
 	                        </div>
-	                        <div class="mt-2 text-center"><button
-	                                class="px-2 py-px rounded text-purple-600 border border-purple-600">Change</button>
+	
+	                        <div class="w-1/2 p-2">
+	                            <div class="my-2">
+	                                <label for="display_name" class="px-2 text-xs text-gray-600">Display Name</label>
+	                                <input
+	                                    class="focus:border-blue-500 w-full block px-2 pb-1 border-b-2 border-blue-200 focus:outline-none"
+	                                    type="text" name="display_name" value="Abra Kadabra">
+	                                <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                            </div>
+	                            <div class="my-2">
+	                                <label for="display_name" class="px-2 text-xs text-gray-600">Username</label>
+	                                <div class="flex"><span class="z-10">@</span><input
+	                                        class="inline border-b-2 -ml-3 pl-4 flex-grow focus:border-blue-500 border-blue-200 block pr-2 pb-1 focus:outline-none"
+	                                        type="text" name="display_name" value="untaro"></div>
+	                                <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                            </div>
+	                            <div class="my-2">
+	                                <label for="display_name" class="px-2 text-xs text-gray-600">Email</label>
+	                                <div class=" text-gray-600 w-full block px-2 pb-1  focus:outline-none" type="text">
+	
+	                                    sabrina@gmail.com
+	                                </div>
+	                                <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                            </div>
+	
+	                            <div class="my-2">
+	                                <label for="display_name" class="px-2 text-xs text-gray-600">Bio</label>
+	                                <textarea
+	                                    class="focus:border-blue-500 w-full block px-2 pb-1 border-b-2 border-blue-200 focus:outline-none"
+	                                    type="text" name="display_name" rows="3" value="Abra Kadabra"></textarea>
+	                                <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                            </div>
 	                        </div>
 	                    </div>
-	                    <div class="w-2/3">
-	                        <div class="text-center font-bold  pt-2 text-lg">VirKill Suprapto</div>
-	                        <div class="text-center py-2">vkprap ● vprap@gmail.com </div>
-	                        <div class="text-center py-4 px-4">
-	                            <div class="text-xs">Bio:</div>
-	                            <textarea col="4"
-	                                class="focus:outline-none text-center w-full bg-gray-200 rounded-lg p-4">Just a humble and generous Backer</textarea>
-	                        </div>
-	                        <div class="text-center"><button
-	                                class="px-6 py-2 rounded text-white bg-purple-600">Save</button>
-	                        </div>
+	
+	
+	
+	
+	                </div>
+	
+	
+	
+	            </div>
+	            <div class="py-2">
+	
+	
+	                <div class="bg-white p-8 mb-8 relative shadow-md rounded-lg text-gray-800 hover:shadow-lg">
+	                    <div class="flex justify-between">
+	                        <div class="font-title text-xl font-bold">Links</div>
+	                        <button
+	                            class="focus:outline-none tracking-wide px-6 py-1 outline-none text-purple-500 transition-all transition-ease hover:bg-purple-600 hover:text-white rounded-lg border-purple-500 border-2">Save</button>
+	                    </div>
+	
+	                    <div class="border-b my-2"></div>
+	
+	
+	                    <div class="my-2">
+	                        <label for="display_name" class="px-2 text-xs text-gray-600">Youtube Link</label>
+	                        <div class="flex px-2"><span class="z-10">https://youtube.com/</span><input
+	                                class="inline w-full border-b-2 focus:border-blue-500 border-blue-200 block pr-2 pb-1 focus:outline-none"
+	                                type="text" name="display_name" value="untaro"></div>
+	                        <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                    </div>
+	
+	                    <div class="my-2">
+	                        <label for="display_name" class="px-2 text-xs text-gray-600">Twitter Link</label>
+	                        <div class="flex px-2"><span class="z-10">https://twitter.com/</span><input
+	                                class="inline w-full border-b-2 focus:border-blue-500 border-blue-200 block pr-2 pb-1 focus:outline-none"
+	                                type="text" name="display_name" value="untaro"></div>
+	                        <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                    </div>
+	
+	                    <div class="my-2">
+	                        <label for="display_name" class="px-2 text-xs text-gray-600">Facebook Link</label>
+	                        <div class="flex px-2"><span class="z-10">https://facebook.com/</span><input
+	                                class="inline w-full border-b-2 focus:border-blue-500 border-blue-200 block pr-2 pb-1 focus:outline-none"
+	                                type="text" name="display_name" value="untaro"></div>
+	                        <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                    </div>
+	
+	                    <div class="my-2">
+	                        <label for="display_name" class="px-2 text-xs text-gray-600">Github Link</label>
+	                        <div class="flex px-2"><span class="z-10">https://github.com/</span><input
+	                                class="inline w-full border-b-2 focus:border-blue-500 border-blue-200 block pr-2 pb-1 focus:outline-none"
+	                                type="text" name="display_name" value="untaro"></div>
+	                        <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                    </div>
+	
+	                    <div class="my-2">
+	                        <label for="display_name" class="px-2 text-xs text-gray-600">LinkedIn Link</label>
+	                        <div class="flex px-2"><span class="z-10">https://linkedin.com/</span><input
+	                                class="inline  w-full border-b-2 focus:border-blue-500 border-blue-200 block pr-2 pb-1 focus:outline-none"
+	                                type="text" name="display_name" value="untaro"></div>
+	                        <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                    </div>
+	                    <div class="my-2">
+	                        <label for="display_name" class="px-2 text-xs text-gray-600">Dribbble Link</label>
+	                        <div class="flex px-2"><span class="z-10">https://dribbble.com/</span><input
+	                                class="inline w-full border-b-2 focus:border-blue-500 border-blue-200 block pr-2 pb-1 focus:outline-none"
+	                                type="text" name="display_name" value="untaro"></div>
+	                        <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
+	                    </div>
+	                    <div class="my-2">
+	                        <label for="display_name" class="px-2 text-xs text-gray-600">Instagram Link</label>
+	                        <div class="flex px-2"><span class="z-10">https://instagram.com/</span><input
+	                                class="inline w-full border-b-2 focus:border-blue-500 border-blue-200 block pr-2 pb-1 focus:outline-none"
+	                                type="text" name="display_name" value="untaro"></div>
+	                        <p class="text-red-500 text-xs px-2" style="min-height: 1.5em;"></p>
 	                    </div>
 	
 	                </div>
@@ -473,7 +582,13 @@
 		}
 	</script>
 
-
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.19.1/trumbowyg.min.js"
+		integrity="sha256-1ifXbvyVBZsVmsqwqcoow46rXHi4976VpOWpaMVu2qM=" crossorigin="anonymous"></script>
+	<script>
+		$('#wysiwyg').trumbowyg();
+	</script>
 </body>
 
 </html>
